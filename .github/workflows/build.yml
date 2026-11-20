@@ -1,0 +1,63 @@
+name: Verify fonts
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    # 母版（8 × 30 MB）不进仓库，CI 只校验已提交的字体文件
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install fontTools
+        run: |
+          python -m pip install --upgrade pip
+          pip install fonttools brotli
+
+      - name: Validate every committed font
+        run: |
+          python - <<'PY'
+          import glob, sys
+          from fontTools.ttLib import TTFont
+
+          files = sorted(glob.glob('fonts/**/*.ttf', recursive=True) +
+                         glob.glob('fonts/**/*.woff2', recursive=True))
+          fail = 0
+          for p in files:
+              try:
+                  f = TTFont(p, lazy=True)
+                  cmap = f.getBestCmap()
+                  print(f'{p:60s} glyphs={f["maxp"].numGlyphs:>6} cmap={len(cmap):>6} '
+                        f'fam={f["name"].getDebugName(1)}')
+              except Exception as exc:
+                  print(f'FAIL {p}: {exc}')
+                  fail += 1
+          sys.exit(1 if fail else 0)
+          PY
+
+      - name: Check static weights
+        run: |
+          python - <<'PY'
+          import sys
+          from fontTools.ttLib import TTFont, TTCollection
+
+          expect = {'Light': 100, 'Regular': 400, 'Medium': 500, 'Bold': 700}
+          for style, w in expect.items():
+              f = TTFont(f'fonts/ttf/HowsenLiuFangrun-{style}.ttf')
+              assert f['OS/2'].usWeightClass == w, style
+              print(style, 'ok', w)
+          ttc = 'fonts/ttc/HowsenLiuFangrun-TTC.ttc'
+          try:
+              t = TTCollection(ttc)
+              print('TTC faces:', [x['name'].getDebugName(2) for x in t.fonts])
+          except Exception:
+              print('TTC 未随仓库分发（见 fonts/ttc/README.txt）')
+          PY

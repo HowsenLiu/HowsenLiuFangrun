@@ -1,0 +1,47 @@
+# 上传说明
+
+本文件夹是 https://github.com/HowsenLiu/HowsenLiuFangrun 的仓库内容（不含网页部署部分）。
+
+## 一、仓库里放什么
+
+GitHub 单文件上限 100 MB。本版的可变字体 140 MB、TTC 120 MB 都超了，
+所以把它们放进 **Releases**，仓库里只提交轻量文件：
+
+| 位置 | 内容 | 体积 |
+|---|---|---|
+| `fonts/ttf/` | 4 个静态 TTF（各约 30 MB） | 120 MB |
+| `fonts/webfonts/` | 全量 woff2 53.4 MB、GB2312 子集 11.7 MB、演示子集 0.61 MB | 66 MB |
+| `sources/` | designspace + 字符清单 + 母版重建说明 | 小 |
+| `scripts/` | 可复现构建脚本 | 小 |
+| `specimen/` `qa/` | 样张与校验报告 | 小 |
+
+**不进仓库**：`HowsenLiuFangrun-VF.ttf`（140 MB）、`HowsenLiuFangrun-TTC.ttc`（120 MB）。
+
+## 二、操作步骤
+
+1. 仓库许可证选「无证」，用本文件夹内的 `LICENSE`（SIL OFL 1.1）覆盖。
+2. 把本文件夹**全部内容**（含隐藏的 `.github`、`.gitignore`、`.gitattributes`）上传到仓库根目录。
+3. 新建 Release，Tag 填 `v2.000`，标题填 `HowsenLiu Fangrun 2.000 · 三轴可变字体`。
+4. 在该 Release 上传以下附件（都在同级 `../3_字体下载/` 里）：
+   - `HowsenLiuFangrun-VF.zip`（含 VF ttf + 全量 woff2）
+   - `HowsenLiuFangrun-Static-TTF.zip`
+   - `HowsenLiuFangrun-TTC.zip`
+   - `HowsenLiuFangrun-WOFF2.zip`
+5. 单独上传 `HowsenLiuFangrun-VF.ttf` 与 `HowsenLiuFangrun-TTC.ttc` 作为可直链下载的附件。
+6. 网页版在同级 `../2_网页部署_CloudflarePages`，发布到 Cloudflare Pages 后，
+   把 `site/index.html` 里 `https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest`
+   换成你的实际仓库地址（若仓库名不同）。
+
+## 命令行方式（可选）
+
+```bash
+cd 1_GitHub仓库上传
+git init
+git add -A
+git commit -m "HowsenLiu Fangrun 2.000: three-axis variable build"
+git branch -M main
+git remote add origin https://github.com/HowsenLiu/HowsenLiuFangrun.git
+git push -u origin main --force
+```
+
+> 若坚持把 VF/TTC 也塞进仓库，需要开启 Git LFS；`fonts/variable/README.txt` 里有说明。

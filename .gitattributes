@@ -1,0 +1,15 @@
+# Binary font files — consider Git LFS if you fork with a large history
+*.ttf   binary
+*.otf   binary
+*.ttc   binary
+*.woff2 binary
+*.ufoz  binary
+
+# Text
+*.py    text eol=lf
+*.md    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.txt   text eol=lf
+*.designspace text eol=lf
+*.csv   text eol=lf

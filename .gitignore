@@ -1,0 +1,14 @@
+# Build artefacts
+*.pyc
+__pycache__/
+build/
+dist/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local scratch
+/out/
+/pilot/
