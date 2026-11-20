@@ -5,7 +5,7 @@
 **方正骨架，圆润收口 —— 一款为屏幕与印刷打磨的中文无衬线字体。**
 
 [![Version](https://img.shields.io/badge/version-2.000-111111.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest)
-[![License](https://img.shields.io/badge/license-免费·个人%20%26%20商用-111111.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Free%20·%20Personal%20%26%20Commercial-111111.svg)](LICENSE)
 [![Glyphs](https://img.shields.io/badge/glyphs-33%2C128-6a737d.svg)](#简介)
 
 [English](README.md) · [字体官网](https://howsenliufangrun.pages.dev) · [GitHub](https://github.com/HowsenLiu/HowsenLiuFangrun)
