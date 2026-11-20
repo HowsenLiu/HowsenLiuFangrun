@@ -14,9 +14,22 @@
 
 ![Fangrun specimen carousel](specimen/hero.gif)
 
-<table>
-<tr>
-<td width="62%" valign="top">
+## ⬇️ Downloads
+
+| Release | Format · Size | Download |
+|---|---|---|
+| Variable font | `.ttf` · 140.0 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
+| Static weights | `.zip` · 47.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
+| TTC collection | `.ttc` · 114.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
+| Web fonts | `.zip` · 65.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| Variable package | `.zip` · 124.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
+| TTC package | `.zip` · 47.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
+
+## 🌐 Website
+
+- [Font website](https://howsenliufangrun.pages.dev)
+- [Author on GitHub](https://github.com/HowsenLiu)
+- [X / Twitter](https://x.com/HowsenLiu_)
 
 ## Overview
 
@@ -32,6 +45,16 @@ Designed by **Howsen Liu (柳皓升)**.
 - **Wide coverage** — 33,128 glyphs / 33,225 code points: GBK, GB18030 Level-1, Big5 traditional, kana, bopomofo, Latin, Greek, Cyrillic and common symbols.
 - **Multiple weights** — variable weight 100–700, plus four static weights (Light / Regular / Medium / Bold) and web WOFF2 builds.
 - **Free to use** — free for both personal and commercial projects.
+
+## Specimens
+
+![Weights](specimen/01-weights.png)
+
+![Liu detail](specimen/02-liu.png)
+
+![Body text](specimen/03-text.png)
+
+![Latin & symbols](specimen/04-latin.png)
 
 ## Install
 
@@ -69,41 +92,6 @@ the GB2312 common subset in this repo, or subset further to your own copy.
 - **Allowed** — personal and commercial use, embedding in web pages, documents, packaging, interfaces and shipped products.
 - **Prohibited** — modifying the font files or technical parameters, extracting outlines to build derivative fonts, redistributing or reselling the files on their own, or training AI models with them. Only the author may modify the source and font files.
 - Full terms: [LICENSE](LICENSE). Original skeleton attribution (Noto / Adobe) is retained as required.
-
-</td>
-<td width="38%" valign="top">
-
-### ⬇️ Downloads
-
-| Release | Format · Size | Download |
-|---|---|---|
-| Variable font | `.ttf` · 140.0 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
-| Static weights | `.zip` · 47.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
-| TTC collection | `.ttc` · 114.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
-| Web fonts | `.zip` · 65.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
-| Variable package | `.zip` · 124.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
-| TTC package | `.zip` · 47.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
-
-### 🌐 Website
-
-- [Font website](https://howsenliufangrun.pages.dev)
-- [Author on GitHub](https://github.com/HowsenLiu)
-- [X / Twitter](https://x.com/HowsenLiu_)
-
-</td>
-</tr>
-</table>
-
-## Specimens
-
-<p align="center">
-<img src="specimen/01-overview.png" width="49%" alt="Overview">
-<img src="specimen/02-weights.png" width="49%" alt="Weights">
-</p>
-<p align="center">
-<img src="specimen/05-text.png" width="49%" alt="Body text">
-<img src="specimen/07-corners.png" width="49%" alt="Corner details">
-</p>
 
 ---
 
