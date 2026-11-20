@@ -14,9 +14,22 @@
 
 ![方润黑体样张轮播](specimen/hero.gif)
 
-<table>
-<tr>
-<td width="62%" valign="top">
+## ⬇️ 下载
+
+| 版本 | 格式 · 体积 | 下载 |
+|---|---|---|
+| 可变字体 | `.ttf` · 140.0 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
+| 静态字重包 | `.zip` · 47.7 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
+| 静态集合包 | `.ttc` · 114.5 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
+| 网页字体包 | `.zip` · 65.7 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| 可变完整包 | `.zip` · 124.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
+| 集合压缩包 | `.zip` · 47.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
+
+## 🌐 网站
+
+- [字体官网](https://howsenliufangrun.pages.dev)
+- [作者 GitHub](https://github.com/HowsenLiu)
+- [X / Twitter](https://x.com/HowsenLiu_)
 
 ## 简介
 
@@ -34,6 +47,16 @@
 - **多字重配套**：可变字重 100–700；另附 Light / Regular /
   Medium / Bold 四款静态字重与网页 WOFF2 版本。
 - **免费可用**：个人项目与商业项目均可免费使用。
+
+## 样张
+
+![字重展示](specimen/01-weights.png)
+
+![柳字圆角细节](specimen/02-liu.png)
+
+![正文排版](specimen/03-text.png)
+
+![拉丁与符号](specimen/04-latin.png)
 
 ## 安装
 
@@ -72,41 +95,6 @@ body { font-family: "HowsenLiu Fangrun", sans-serif; }
 - **禁止**：修改字体文件与技术参数、提取轮廓制作衍生字体、
   单独再分发或转售、用于 AI 模型训练；仅作者本人可修改源码与字体文件。
 - 完整条款见 [LICENSE](LICENSE)；原始骨架署名（Noto / Adobe）按要求保留。
-
-</td>
-<td width="38%" valign="top">
-
-### ⬇️ 下载
-
-| 版本 | 格式 · 体积 | 下载 |
-|---|---|---|
-| 可变字体 | `.ttf` · 140.0 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
-| 静态字重包 | `.zip` · 47.7 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
-| 静态集合包 | `.ttc` · 114.5 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
-| 网页字体包 | `.zip` · 65.7 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
-| 可变完整包 | `.zip` · 124.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
-| 集合压缩包 | `.zip` · 47.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
-
-### 🌐 网站
-
-- [字体官网](https://howsenliufangrun.pages.dev)
-- [作者 GitHub](https://github.com/HowsenLiu)
-- [X / Twitter](https://x.com/HowsenLiu_)
-
-</td>
-</tr>
-</table>
-
-## 样张
-
-<p align="center">
-<img src="specimen/01-overview.png" width="49%" alt="总览">
-<img src="specimen/02-weights.png" width="49%" alt="字重">
-</p>
-<p align="center">
-<img src="specimen/05-text.png" width="49%" alt="正文排版">
-<img src="specimen/07-corners.png" width="49%" alt="圆角细节">
-</p>
 
 ---
 
