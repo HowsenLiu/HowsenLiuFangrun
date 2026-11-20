@@ -1,161 +1,114 @@
 <div align="center">
 
-# HowsenLiu Fangrun Variable · 柳皓升方润黑体
+# HowsenLiu Fangrun · 柳皓升方润黑体
 
-**A three-axis CJK variable typeface — one skeleton, one rounding rule, 33,128 glyphs.**
+**A rounded-square CJK sans — square in structure, soft at the terminals, built for screen and print.**
 
-[![License: SIL OFL 1.1](https://img.shields.io/badge/license-SIL%20OFL%201.1-blue.svg)](LICENSE)
-[![Axes](https://img.shields.io/badge/axes-wght%20%C3%97%20wdth%20%C3%97%20opsz-orange.svg)](#axes)
-[![Glyphs](https://img.shields.io/badge/glyphs-33%2C128-brightgreen.svg)](#character-coverage)
+[![Version](https://img.shields.io/badge/version-2.000-111111.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest)
+[![License](https://img.shields.io/badge/license-Free%20·%20Personal%20%26%20Commercial-111111.svg)](LICENSE)
+[![Glyphs](https://img.shields.io/badge/glyphs-33%2C128-6a737d.svg)](#overview)
 
-[简体中文说明](README.zh-CN.md)
+[简体中文](README.zh-CN.md) · [Website](https://howsenliufangrun.pages.dev) · [GitHub](https://github.com/HowsenLiu/HowsenLiuFangrun)
 
 </div>
 
----
+![Fangrun specimen carousel](specimen/hero.gif)
 
-![Specimen](specimen/01-overview.png)
+<table>
+<tr>
+<td width="62%" valign="top">
 
-## About
+## Overview
 
-**HowsenLiu Fangrun** (柳皓升方润黑体) is built on a square, architectural skeleton where
-**every stroke corner and terminal is softened with the same radius (70/1000 em)**.
-This release turns it into a **variable font** organised the way SF Pro is:
-one weight axis, one width axis, one optical-size axis — driven by **eight masters that
-share an identical outline structure**.
+**HowsenLiu Fangrun (柳皓升方润黑体)** sits on an architectural, slightly square
+skeleton; every stroke corner and terminal is softened with one consistent fillet
+radius. The result reads clean in body text and stays confident at display sizes.
 
-Designed by **Howsen Liu (柳皓升)**. Released under the **SIL Open Font License 1.1** —
-free for personal and commercial use, modification and redistribution.
+Designed by **Howsen Liu (柳皓升)**.
 
-## Axes
+## Features
 
-| Axis | Range | Default | Behaviour |
-|---|---|---|---|
-| `wght` | 100 → 700 | 400 | Stroke weight. Native masters at Light 100, Regular 400, Medium 500, Bold 700 |
-| `wdth` | 75 → 105 | 100 | Horizontal width. 75 condensed, 100 normal, 105 expanded |
-| `opsz` | 12 → 72 | 16 | Optical size. Near 12: heavier strokes, larger counters. Near 72: finer strokes, refined details |
-
-## Why the interpolation never breaks
-
-- **Eight masters**: four native weights plus two width masters and two optical-size masters.
-- For every character, **contour count, point count, point order and on/off flags are identical
-  across all eight masters**.
-- The corner-fillet plan is computed **once** on Regular and applied to every master with the
-  same trim distance and the same number of arc segments.
-- Verification: [`qa/QA-插值兼容性报告.md`](qa/QA-插值兼容性报告.md) — 33,128 glyphs,
-  structural mismatches: **0**.
-
-The result is a `gvar` where every point has a defined delta everywhere in the design space;
-no shifting, folding or collapse at intermediate positions.
-
-## Files
-
-| Path | |
-|---|---|
-| `HowsenLiuFangrun-VF.ttf` (Release asset) | Three-axis variable font, 140 MB — above GitHub's 100 MB per-file limit |
-| `fonts/webfonts/HowsenLiuFangrun-VF.woff2` | Compressed web build, full charset |
-| `fonts/webfonts/HowsenLiuFangrun-VF-subset.woff2` | Web subset (GB2312 common characters, 8,470 glyphs) |
-| `fonts/webfonts/HowsenLiuFangrun-VF-demo.woff2` | Tiny demo subset used by this site (752 glyphs, 0.61 MB) |
-| `fonts/ttf/HowsenLiuFangrun-{Light,Regular,Medium,Bold}.ttf` | Static weights for software without variable-axis support |
-| `HowsenLiuFangrun-TTC.ttc` (Release asset) | Static collection, 120 MB, for legacy WPS / older systems |
-| `sources/masters/README.txt` | The eight masters (30 MB each) are not in the repo; rebuild with one command |
-| `sources/HowsenLiuFangrun.designspace` | Designspace (three axes, eight sources) |
-| `scripts/*.py` | Reproducible build pipeline |
-| `specimen/*.png` | Specimens |
+- **Unified rounding** — every corner and terminal shares the same fillet radius, for one consistent voice.
+- **Wide coverage** — 33,128 glyphs / 33,225 code points: GBK, GB18030 Level-1, Big5 traditional, kana, bopomofo, Latin, Greek, Cyrillic and common symbols.
+- **Multiple weights** — variable weight 100–700, plus four static weights (Light / Regular / Medium / Bold) and web WOFF2 builds.
+- **Free to use** — free for both personal and commercial projects.
 
 ## Install
 
 **Windows** — select the `.ttf` files → right-click → *Install*.
-**macOS** — double-click → *Install Font*.
+**macOS** — double-click the font file → *Install Font*.
 **Linux**
 
 ```bash
 mkdir -p ~/.local/share/fonts
-cp fonts/ttf/*.ttf ~/.local/share/fonts     # static weights
-# the variable font comes from the Release; cp it into the same folder
+cp fonts/ttf/*.ttf ~/.local/share/fonts
 fc-cache -f -v
 ```
 
-For older WPS or software that ignores `fvar`, install `HowsenLiuFangrun-TTC.ttc`
-to get all four static weights in one file.
+For older WPS or legacy software that ignores variable axes, download the TTC
+collection from the Release to get all four static weights in one file.
 
 ## Web usage
 
 ```css
 @font-face {
-  font-family: "HowsenLiu Fangrun VF";
-  src: url("fonts/webfonts/HowsenLiuFangrun-VF.woff2") format("woff2");
+  font-family: "HowsenLiu Fangrun";
+  src: url("fonts/webfonts/HowsenLiuFangrun-VF-subset.woff2") format("woff2");
   font-weight: 100 700;
-  font-stretch: 75% 105%;
   font-display: swap;
 }
 
-h1 { font-family: "HowsenLiu Fangrun VF";
-     font-variation-settings: "wght" 600, "wdth" 100, "opsz" 48; }
-
-p  { font-family: "HowsenLiu Fangrun VF"; font-optical-sizing: auto; }
+body { font-family: "HowsenLiu Fangrun", sans-serif; }
 ```
 
-## Build from source
+The full-charset WOFF2 is large and ships as a Release asset; for live pages use
+the GB2312 common subset in this repo, or subset further to your own copy.
 
-```bash
-pip install fonttools skia-pathops ufoLib2 ufo2ft brotli Pillow
+## License
 
-cd scripts
-python 01_build_masters.py    # eight compatible masters
-python 02_build_vf.py         # designspace + gvar → VF
-python 03_instances.py        # statics + TTC + WOFF2
-python 04_specimens.py        # specimens
-python 05_qa.py               # compatibility report
-```
+- **Allowed** — personal and commercial use, embedding in web pages, documents, packaging, interfaces and shipped products.
+- **Prohibited** — modifying the font files or technical parameters, extracting outlines to build derivative fonts, redistributing or reselling the files on their own, or training AI models with them. Only the author may modify the source and font files.
+- Full terms: [LICENSE](LICENSE). Original skeleton attribution (Noto / Adobe) is retained as required.
 
-The masters are **native instances** of the Noto Sans SC variable font at 100/400/500/700 —
-not one weight offset into many — so the skeleton is genuinely shared. Rounding is then
-applied through a single shared fillet plan.
+</td>
+<td width="38%" valign="top">
 
-## Character coverage
+### ⬇️ Downloads
 
-33,225 code points / 33,128 glyphs:
+| Release | Format · Size | Download |
+|---|---|---|
+| Variable font | `.ttf` · 140.0 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
+| Static weights | `.zip` · 47.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
+| TTC collection | `.ttc` · 114.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
+| Web fonts | `.zip` · 65.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| Variable package | `.zip` · 124.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
+| TTC package | `.zip` · 47.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
 
-| Range | Count |
-|---|---|
-| CJK Unified Ideographs (Simplified and Traditional) | 20,976 |
-| CJK Extension A | 6,582 |
-| CJK Extension B | 2,108 |
-| CJK Extensions C–F | 198 |
-| CJK Compatibility Ideographs | 366 |
-| Kangxi Radicals + CJK Radicals Supplement | 329 |
-| Kana / Bopomofo / Fullwidth forms | 593 |
-| Latin (Basic, Latin-1, Extended) | 244 |
-| Greek + Cyrillic | 115 |
-| Symbols (punctuation, arrows, math, currency, box drawing, shapes) | 1,714 |
+### 🌐 Website
 
-Extension B and part of the compatibility block have no native variable source in the new
-masters; they are synthesised from the previous Regular outline with point-wise offsets,
-keeping the same structure so coverage matches v1.000.
+- [Font website](https://howsenliufangrun.pages.dev)
+- [Author on GitHub](https://github.com/HowsenLiu)
+- [X / Twitter](https://x.com/HowsenLiu_)
 
-## License and attribution
+</td>
+</tr>
+</table>
 
-**SIL Open Font License 1.1.** Commercial use, modification and redistribution are permitted.
-Derivatives must stay under the OFL and may not use the reserved name `HowsenLiu Fangrun`.
+## Specimens
 
-When redistributing, **keep the original skeleton attribution**:
+<p align="center">
+<img src="specimen/01-overview.png" width="49%" alt="Overview">
+<img src="specimen/02-weights.png" width="49%" alt="Weights">
+</p>
+<p align="center">
+<img src="specimen/05-text.png" width="49%" alt="Body text">
+<img src="specimen/07-corners.png" width="49%" alt="Corner details">
+</p>
 
-- Glyph skeleton: **Noto Sans CJK SC / Noto Sans SC**, Copyright 2014–2021 Adobe
-  (<http://www.adobe.com/>), SIL OFL 1.1.
-- Original skeleton design: **Ryoko NISHIZUKA, Paul D. Hunt, Sandoll Communications**.
+---
 
-Changes in this project: uniform corner rounding (70/1000 em, 正圆弧 1.0), three-axis master
-construction and interpolation-structure unification, static instances and TTC packaging,
-naming and metadata. Design: **Howsen Liu (柳皓升)**.
+<div align="center">
 
-## Known limitations
+Designed by **Howsen Liu** · Version 2.000 · [Changelog](CHANGELOG.md)
 
-- No TrueType hinting.
-- No Latin kerning yet.
-- Regional SC/TC glyph variants are not separated (no `locl`).
-- The width axis is a proportional horizontal scale, so stems get proportionally lighter at 75.
-
-## Changelog
-
-See [CHANGELOG.md](CHANGELOG.md) and [FONTLOG.txt](FONTLOG.txt).
+</div>

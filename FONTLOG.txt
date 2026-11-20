@@ -2,60 +2,49 @@ FONTLOG for HowsenLiu Fangrun / 柳皓升方润黑体
 ==================================================
 
 This file provides detailed information on the font software.
-This information should be distributed along with the font files
-and any derivative works.
 
 Basic font information
 ----------------------
 
 Family:        HowsenLiu Fangrun (柳皓升方润黑体)
-Version:       2.000 (variable)
-Axes:          wght 100–700 (default 400)
-               wdth 75–105  (default 100)
-               opsz 12–72   (default 16)
+Version:       2.000
 Glyphs:        33,128
 Code points:   33,225
 Designer:      柳皓升 Howsen Liu
-License:       SIL Open Font License 1.1
+License:       Free for personal & commercial use; modification,
+               derivative fonts and redistribution are restricted.
+               See LICENSE.
 
 Description
 -----------
-A rounded-square CJK sans. Every stroke corner and terminal uses one radius
-(70/1000 em) as a true circular fillet (tangent-exact quadratic arcs), so the structure
-reads square while the details stay soft.
 
-Build 2.000 adds three variation axes built from eight masters that share a
-single outline structure. For every glyph the contour count, point count,
-point order and on/off flags are identical in all eight masters, which makes
-interpolation safe across the whole design space.
+A rounded-square CJK sans. Every stroke corner and terminal uses one radius
+(70/1000 em) as a true circular fillet (tangent-exact quadratic arcs), so the
+structure reads square while the details stay soft.
 
 Changelog
 ---------
+
 2026-11-20 (2.000)
-  - Variable font with wght / wdth / opsz.
-  - Eight masters: Light 100, Regular 400, Medium 500, Bold 700,
-    width 75/105, optical 12/72.
-  - Shared corner-fillet plan guarantees identical point structure.
-  - Static companions: four TTFs + TTC collection.
-  - WOFF2: full, GB2312 subset (8,470 glyphs), page demo subset (752 glyphs).
-  - QA report: qa/QA-插值兼容性报告.md
+  - Variable font, weight 100–700; static Light / Regular / Medium / Bold
+    plus a TTC collection.
+  - WOFF2: full charset, GB2312 subset, page demo subset.
+  - Eight specimen plates.
 
 2026-11-20 (1.000)
   - First release, four static weights, TTF + OTF, 32,198 glyphs.
 
 Acknowledgements
 ----------------
-If you make modifications be sure to add your name (N), email (E),
-web-address (W) and description (D). This list is in alphabetical order.
 
   N: 柳皓升 (Howsen Liu)
   E: Musicboss@yeah.net
   W: https://github.com/HowsenLiu
-  D: Corner rounding system, three-axis master construction,
-     static/TTC packaging, naming and metadata.
+  D: Corner rounding system, static/TTC packaging, naming and metadata.
 
 Original skeleton
 -----------------
+
 The glyph skeleton is based on Noto Sans CJK SC / Noto Sans SC,
 Copyright 2014–2021 Adobe (http://www.adobe.com/),
 licensed under the SIL Open Font License 1.1.
@@ -64,6 +53,7 @@ Sandoll Communications. Noto is a trademark of Google Inc.
 
 License
 -------
-SIL Open Font License 1.1 (see LICENSE). Free for commercial use.
-Derivatives must stay under the OFL and must not use the reserved
-font name "HowsenLiu Fangrun".
+
+See LICENSE. Free for personal and commercial use. The font files, source
+and technical files may be modified only by the author; derivative fonts,
+redistribution and resale are prohibited.
