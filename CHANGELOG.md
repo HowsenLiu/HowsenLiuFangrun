@@ -30,8 +30,9 @@ All notable changes to HowsenLiu Fangrun are documented here.
   subfamily `Variable`.
 - Heavy deliverables ship as GitHub Release assets (above the 100 MB
   per-file limit).
-- License updated: free for personal and commercial use; modification,
-  derivative fonts and redistribution are restricted — see [LICENSE](LICENSE).
+- License updated to SIL Open Font License 1.1 (OFL 1.1): free for
+  personal and commercial use; modification and derivatives are permitted
+  under OFL terms — see [LICENSE](LICENSE).
 
 ### Known limitations
 
