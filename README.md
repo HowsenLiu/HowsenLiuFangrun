@@ -172,16 +172,25 @@ common subset in this repo, or subset further to your own copy.
 
 ## License
 
-- Released under the **SIL Open Font License 1.1 (OFL 1.1)** — free for personal and commercial
-  use, embeddable in web pages, documents, packaging, interfaces and shipped products; modification
-  and derivative fonts are permitted.
-- Derivatives must remain under OFL 1.1 and retain the copyright notices and license text; the
-  font files may not be sold standalone.
+- Released under the **SIL Open Font License 1.1 (OFL 1.1)**. Usage follows the OFL 1.1 text:
+  free for personal and commercial use; glyphs may be modified and derivative fonts may be created.
+- Derivatives must remain under OFL 1.1 — they may not be relicensed under any other license — and
+  must retain the original copyright notices (Adobe / Google LLC, Noto Sans CJK SC / Noto Sans SC),
+  author attribution and the full license text. The font files may not be sold standalone.
 - **Reserved Font Names**: `HowsenLiu Fangrun`, `柳皓升方润黑体`, `方润黑体`, `Fangrun` —
   modified derivatives must be renamed before release and may not keep any of these names.
 - Full terms: [LICENSE](LICENSE). Original skeleton attribution retained: Noto Sans CJK SC / Noto
   Sans SC (Copyright 2014–2021 Adobe and Google LLC, SIL OFL 1.1); rounding, weight pairing and
   naming by Howsen Liu.
+
+### Usage scenarios
+
+| Scenario | Details |
+|:-:|---|
+| ✅ Allowed (no extra license) | Print (posters, packaging, brochures), video subtitles and covers, web font loading, personal and commercial brand materials, design deliverables |
+| ✅ Redistributable (keep attribution and full OFL text) | Bundling with software, projects or hardware |
+| ⚠️ Written confirmation recommended | Embedding inside App / mini-program / game install packages; registering trademarks built primarily on the glyph shapes |
+| ❌ Prohibited | Selling the font files standalone as a package; removing or altering the original copyright notices and license text |
 
 ---
 
