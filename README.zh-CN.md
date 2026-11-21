@@ -1,9 +1,11 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="logo-mark-dark.png">
+<a href="#gh-light-mode-only">
   <img src="logo-mark.png" alt="柳皓升方润黑体" height="72">
-</picture>
+</a>
+<a href="#gh-dark-mode-only">
+  <img src="logo-mark-dark.png" alt="柳皓升方润黑体" height="72">
+</a>
 
 # 柳皓升方润黑体 · HowsenLiu Fangrun
 
@@ -15,10 +17,12 @@
 
 [English](README.md) · [字体官网](https://howsenliufangrun.pages.dev) · [GitHub](https://github.com/HowsenLiu/HowsenLiuFangrun)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="specimen/hero-dark.gif">
+<a href="#gh-light-mode-only">
   <img src="specimen/hero.gif" alt="柳皓升方润黑体样张轮播 —— 中文、English、日本語与符号" width="100%">
-</picture>
+</a>
+<a href="#gh-dark-mode-only">
+  <img src="specimen/hero-dark.gif" alt="柳皓升方润黑体样张轮播 —— 中文、English、日本語与符号" width="100%">
+</a>
 
 </div>
 
@@ -44,6 +48,7 @@
     fc-cache -f -v
     ```
 - 不支持可变轴的旧版 WPS / 老软件，可下载 TTC 集合包，一次装入四款静态字重。
+- 可变、静态、TTC 三套文件使用各自独立的族名与 PostScript 名，同时安装不会被字体管理器判为重复而互相覆盖。
 
 ### Release 附件
 
@@ -52,7 +57,7 @@
 | 可变字体 | `.ttf` · 140.0 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
 | 静态字重包 | `.zip` · 47.7 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
 | 静态集合包 | `.ttc` · 114.5 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
-| 网页字体包 | `.zip` · 65.7 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| 网页字体包 | `.zip` · 54.9 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
 | 可变完整包 | `.zip` · 124.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
 | 集合压缩包 | `.zip` · 47.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
 
