@@ -11,9 +11,9 @@ Version:       2.000
 Glyphs:        33,128
 Code points:   33,225
 Designer:      柳皓升 Howsen Liu
-License:       Free for personal & commercial use; modification,
-               derivative fonts and redistribution are restricted.
-               See LICENSE.
+License:       SIL Open Font License 1.1 (OFL 1.1); free for
+               personal & commercial use, modification and derivatives
+               are permitted under OFL terms. See LICENSE.
 
 Description
 -----------
@@ -46,14 +46,18 @@ Original skeleton
 -----------------
 
 The glyph skeleton is based on Noto Sans CJK SC / Noto Sans SC,
-Copyright 2014–2021 Adobe (http://www.adobe.com/),
-licensed under the SIL Open Font License 1.1.
+Copyright 2014–2021 Adobe and Google LLC (http://www.adobe.com/,
+https://fonts.google.com/), licensed under the SIL Open Font License 1.1.
 Original skeleton design: Ryoko NISHIZUKA, Paul D. Hunt,
 Sandoll Communications. Noto is a trademark of Google Inc.
 
 License
 -------
 
-See LICENSE. Free for personal and commercial use. The font files, source
-and technical files may be modified only by the author; derivative fonts,
-redistribution and resale are prohibited.
+Released under the SIL Open Font License 1.1. Free for personal and
+commercial use; modification and derivative fonts are permitted.
+Derivatives must remain under OFL 1.1 with attribution and the license
+text retained; the font files may not be sold standalone. The names
+`HowsenLiu Fangrun`, `柳皓升方润黑体`, `方润黑体` and `Fangrun` are
+Reserved Font Names; modified derivatives must be renamed and may not
+keep any of these names. See LICENSE for the full text.
