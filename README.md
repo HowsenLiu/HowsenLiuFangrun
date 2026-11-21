@@ -10,7 +10,7 @@
 **A rounded-square CJK sans — square in structure, soft at the terminals, built for screen and print.**
 
 [![Version](https://img.shields.io/badge/version-2.000-111111.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest)
-[![License](https://img.shields.io/badge/license-Free%20·%20Personal%20%26%20Commercial-111111.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-OFL%201.1-111111.svg)](LICENSE)
 [![Glyphs](https://img.shields.io/badge/glyphs-33%2C128-6a737d.svg)](#character-support)
 
 [简体中文](README.zh-CN.md) · [Website](https://howsenliufangrun.pages.dev) · [GitHub](https://github.com/HowsenLiu/HowsenLiuFangrun)
@@ -58,6 +58,50 @@ bopomofo, Arabic numerals and common punctuation and symbols.
 | Variable package | `.zip` · 124.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
 | TTC package | `.zip` · 47.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
 
+### Prompt for AI assistants
+
+One tailored prompt per package — paste the one you need into your AI assistant; the direct download link is included.
+
+**Variable pack (VF)**
+
+```text
+Fetch the "HowsenLiu Fangrun" variable font pack from GitHub and install it in my project.
+Direct download: https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip
+Repo: https://github.com/HowsenLiu/HowsenLiuFangrun
+The pack contains HowsenLiuFangrun-VF.ttf, with axes wght 100–700, wdth 75–105 and opsz 12–72.
+Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
+```
+
+**Static TTF pack**
+
+```text
+Fetch the "HowsenLiu Fangrun" static TTF pack from GitHub and install it in my project.
+Direct download: https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip
+Repo: https://github.com/HowsenLiu/HowsenLiuFangrun
+The pack carries four static weights: Light / Regular / Medium / Bold.
+Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
+```
+
+**TTC collection**
+
+```text
+Fetch the "HowsenLiu Fangrun" TTC collection from GitHub and install it in my project (for legacy WPS and older systems).
+Direct download: https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip
+Repo: https://github.com/HowsenLiu/HowsenLiuFangrun
+Single-file TTC collection with all four static weights.
+Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
+```
+
+**Web WOFF2 pack**
+
+```text
+Fetch the "HowsenLiu Fangrun" web WOFF2 pack from GitHub and embed it in my website.
+Direct download: https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip
+Repo: https://github.com/HowsenLiu/HowsenLiuFangrun
+Compressed WOFF2 builds for web embedding.
+Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
+```
+
 ## Character support
 
 | Script | Coverage |
@@ -67,7 +111,7 @@ bopomofo, Arabic numerals and common punctuation and symbols.
 | Greek & Cyrillic | Basic Greek and Cyrillic alphabets |
 | Japanese kana | Hiragana and katakana |
 | Bopomofo | Mandarin phonetic symbols ㄅㄆㄇㄈ |
-| Numerals | Arabic numerals 0–9 |
+| Numerals | Arabic numerals 0–9 and Roman numerals Ⅰ–Ⅹ |
 | Punctuation & symbols | CJK and Western punctuation, arrows, geometric shapes, currency marks and common symbols |
 
 ## Variable axes
@@ -118,16 +162,20 @@ common subset in this repo, or subset further to your own copy.
 - Design: [Howsen Liu (柳皓升)](https://github.com/HowsenLiu)
 - Website: [howsenliufangrun.pages.dev](https://howsenliufangrun.pages.dev)
 - X / Twitter: [@HowsenLiu_](https://x.com/HowsenLiu_)
+- Code of Conduct: [`.github/CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md)
 
 ## License
 
-- **Allowed** — personal and commercial use, embedding in web pages, documents, packaging,
-  interfaces and shipped products.
-- **Prohibited** — modifying the font files or technical parameters, extracting outlines to build
-  derivative fonts, redistributing or reselling the files on their own, or training AI models with
-  them. Only the author may modify the source and font files.
-- Full terms: [LICENSE](LICENSE). Original skeleton attribution (Noto Sans CJK SC / Noto Sans SC,
-  Adobe, SIL OFL 1.1) is retained as required.
+- Released under the **SIL Open Font License 1.1 (OFL 1.1)** — free for personal and commercial
+  use, embeddable in web pages, documents, packaging, interfaces and shipped products; modification
+  and derivative fonts are permitted.
+- Derivatives must remain under OFL 1.1 and retain the copyright notices and license text; the
+  font files may not be sold standalone.
+- **Reserved Font Names**: `HowsenLiu Fangrun`, `柳皓升方润黑体`, `方润黑体`, `Fangrun` —
+  modified derivatives must be renamed before release and may not keep any of these names.
+- Full terms: [LICENSE](LICENSE). Original skeleton attribution retained: Noto Sans CJK SC / Noto
+  Sans SC (Copyright 2014–2021 Adobe and Google LLC, SIL OFL 1.1); rounding, weight pairing and
+  naming by Howsen Liu.
 
 ---
 
