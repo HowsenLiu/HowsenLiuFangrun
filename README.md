@@ -1,9 +1,11 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="logo-mark-dark.png">
+<a href="#gh-light-mode-only">
   <img src="logo-mark.png" alt="HowsenLiu Fangrun" height="72">
-</picture>
+</a>
+<a href="#gh-dark-mode-only">
+  <img src="logo-mark-dark.png" alt="HowsenLiu Fangrun" height="72">
+</a>
 
 # HowsenLiu Fangrun · 柳皓升方润黑体
 
@@ -15,10 +17,12 @@
 
 [简体中文](README.zh-CN.md) · [Website](https://howsenliufangrun.pages.dev) · [GitHub](https://github.com/HowsenLiu/HowsenLiuFangrun)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="specimen/hero-dark.gif">
+<a href="#gh-light-mode-only">
   <img src="specimen/hero.gif" alt="HowsenLiu Fangrun specimen carousel — Chinese, English, Japanese and symbols" width="100%">
-</picture>
+</a>
+<a href="#gh-dark-mode-only">
+  <img src="specimen/hero-dark.gif" alt="HowsenLiu Fangrun specimen carousel — Chinese, English, Japanese and symbols" width="100%">
+</a>
 
 </div>
 
@@ -46,6 +50,8 @@ bopomofo, Arabic numerals and common punctuation and symbols.
     ```
 - For older WPS or legacy software that ignores variable axes, download the TTC collection, which
   carries all four static weights in one file.
+- The variable, static and TTC builds use independent family names and PostScript names, so all
+  three can be installed together without the font manager treating them as duplicates.
 
 ### Release assets
 
@@ -54,7 +60,7 @@ bopomofo, Arabic numerals and common punctuation and symbols.
 | Variable font | `.ttf` · 140.0 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
 | Static weights | `.zip` · 47.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
 | TTC collection | `.ttc` · 114.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
-| Web fonts | `.zip` · 65.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| Web fonts | `.zip` · 54.9 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
 | Variable package | `.zip` · 124.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
 | TTC package | `.zip` · 47.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
 
