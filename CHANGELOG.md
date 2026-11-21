@@ -2,6 +2,26 @@
 
 All notable changes to HowsenLiu Fangrun are documented here.
 
+## [2.000] — 2026-11-21 revision
+
+### Added
+
+- **Korean Hangul** merged from the Noto Sans KR skeleton (SIL OFL 1.1): all
+  11,172 precomposed syllables (가–힣), jamo, extended jamo A/B, compatibility
+  letters and halfwidth forms.
+
+### Design
+
+- Fillet radius raised from 70 to 88/1000 em, with a lower turn-angle
+  threshold, so corners and terminals are rounder across CJK and Hangul alike.
+- Coverage: 44,752 code points / 44,655 glyphs.
+
+### Attribution
+
+- Original skeleton notices now cover Noto Sans CJK SC / Noto Sans SC and
+  Noto Sans KR (Copyright 2014–2021 Adobe and Google LLC, SIL OFL 1.1); the OFL
+  terms themselves are unchanged.
+
 ## [2.000] — 2026-11-20
 
 ### Added

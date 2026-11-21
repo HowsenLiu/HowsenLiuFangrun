@@ -8,8 +8,8 @@ Basic font information
 
 Family:        HowsenLiu Fangrun (柳皓升方润黑体)
 Version:       2.000
-Glyphs:        33,128
-Code points:   33,225
+Glyphs:        44,655
+Code points:   44,752
 Designer:      柳皓升 Howsen Liu
 License:       SIL Open Font License 1.1 (OFL 1.1); free for
                personal & commercial use, modification and derivatives
@@ -18,12 +18,19 @@ License:       SIL Open Font License 1.1 (OFL 1.1); free for
 Description
 -----------
 
-A rounded-square CJK sans. Every stroke corner and terminal uses one radius
-(70/1000 em) as a true circular fillet (tangent-exact quadratic arcs), so the
-structure reads square while the details stay soft.
+A rounded-square CJK + Hangul sans. Every stroke corner and terminal uses one
+radius (88/1000 em) as a true circular fillet (tangent-exact quadratic arcs), so
+the structure reads square while the details stay soft.
 
 Changelog
 ---------
+
+2026-11-21 (2.000 revision)
+  - Merged the Noto Sans KR skeleton: all 11,172 precomposed Hangul syllables,
+    jamo, extended jamo A/B, compatibility letters and halfwidth forms.
+  - Fillet radius raised to 88/1000 em with a lower turn-angle threshold, so
+    corners and terminals are rounder across every script.
+  - Coverage: 44,752 code points / 44,655 glyphs.
 
 2026-11-20 (2.000)
   - Variable font, weight 100–700; static Light / Regular / Medium / Bold
@@ -45,7 +52,7 @@ Acknowledgements
 Original skeleton
 -----------------
 
-The glyph skeleton is based on Noto Sans CJK SC / Noto Sans SC,
+The glyph skeleton is based on Noto Sans CJK SC / Noto Sans SC and Noto Sans KR,
 Copyright 2014–2021 Adobe and Google LLC (http://www.adobe.com/,
 https://fonts.google.com/), licensed under the SIL Open Font License 1.1.
 Original skeleton design: Ryoko NISHIZUKA, Paul D. Hunt,

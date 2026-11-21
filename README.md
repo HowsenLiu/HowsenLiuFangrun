@@ -13,15 +13,15 @@
 
 [![Version](https://img.shields.io/badge/version-2.000-111111.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest)
 [![License](https://img.shields.io/badge/license-OFL%201.1-111111.svg)](LICENSE)
-[![Glyphs](https://img.shields.io/badge/glyphs-33%2C128-6a737d.svg)](#character-support)
+[![Glyphs](https://img.shields.io/badge/glyphs-44%2C655-6a737d.svg)](#character-support)
 
 [简体中文](README.zh-CN.md) · [Website](https://howsenliufangrun.pages.dev) · [GitHub](https://github.com/HowsenLiu/HowsenLiuFangrun)
 
 <a href="#gh-light-mode-only">
-  <img src="specimen/hero.gif" alt="HowsenLiu Fangrun specimen carousel — Chinese, English, Japanese and symbols" width="100%">
+  <img src="specimen/hero.gif" alt="HowsenLiu Fangrun specimen carousel — Chinese, English, Japanese, Korean and symbols" width="100%">
 </a>
 <a href="#gh-dark-mode-only">
-  <img src="specimen/hero-dark.gif" alt="HowsenLiu Fangrun specimen carousel — Chinese, English, Japanese and symbols" width="100%">
+  <img src="specimen/hero-dark.gif" alt="HowsenLiu Fangrun specimen carousel — Chinese, English, Japanese, Korean and symbols" width="100%">
 </a>
 
 </div>
@@ -29,8 +29,9 @@
 HowsenLiu Fangrun is a sans-serif that balances an architectural, slightly square skeleton with
 consistent rounded terminals. Every corner and stroke ending shares one fillet radius, so the
 typeface reads clean in long lines and stays confident at display sizes. It covers Simplified and
-Traditional Chinese, Latin and European accented letters, Greek, Cyrillic, Japanese kana,
-bopomofo, Arabic numerals and common punctuation and symbols.
+Traditional Chinese, Korean Hangul (all precomposed syllables and jamo), Latin and European
+accented letters, Greek, Cyrillic, Japanese kana, bopomofo, Arabic numerals and common punctuation
+and symbols.
 
 ## Download & Install
 
@@ -57,12 +58,12 @@ bopomofo, Arabic numerals and common punctuation and symbols.
 
 | Release | Format · Size | Download |
 |---|---|---|
-| Variable font | `.ttf` · 140.0 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
-| Static weights | `.zip` · 47.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
-| TTC collection | `.ttc` · 114.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
-| Web fonts | `.zip` · 54.9 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
-| Variable package | `.zip` · 124.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
-| TTC package | `.zip` · 47.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
+| Variable font | `.ttf` · 192.9 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
+| Static weights | `.zip` · 59.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
+| TTC collection | `.ttc` · 157.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
+| Web fonts | `.zip` · 84.3 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| Variable package | `.zip` · 158.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
+| TTC package | `.zip` · 58.6 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
 
 ### Prompt for AI assistants
 
@@ -112,7 +113,8 @@ Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modi
 
 | Script | Coverage |
 |:-:|:-:|
-| Han characters | GBK full set, GB18030 Level 1, Big5 Traditional; 33,128 glyphs / 33,225 code points in total |
+| Han characters | GBK full set, GB18030 Level 1, Big5 Traditional; 44,655 glyphs / 44,752 code points in total |
+| Korean Hangul | All 11,172 precomposed syllables (가–힣), jamo, extended jamo A/B, compatibility letters and halfwidth forms |
 | Latin & European | Basic Latin plus accented letters (À Á Â Ä Ç É È Ê Ë Ñ Ó Ô Ö Ú Ü ã õ ç …), covering English, French, German, Spanish, Portuguese and more |
 | Greek & Cyrillic | Basic Greek and Cyrillic alphabets |
 | Japanese kana | Hiragana and katakana |
@@ -139,13 +141,13 @@ TTFs and a TTC collection.
 
 ## Specimens
 
-![Weights](specimen/01-weights.png)
+![Overview](specimen/01-overview.png)
 
-![Liu detail](specimen/02-liu.png)
+![Weights](specimen/02-weights.png)
 
-![Body text](specimen/03-text.png)
+![Body text](specimen/05-text.png)
 
-![Latin & symbols](specimen/04-latin.png)
+![Latin, symbols & Hangul](specimen/08-latin.png)
 
 ## Web usage
 
@@ -175,13 +177,13 @@ common subset in this repo, or subset further to your own copy.
 - Released under the **SIL Open Font License 1.1 (OFL 1.1)**. Usage follows the OFL 1.1 text:
   free for personal and commercial use; glyphs may be modified and derivative fonts may be created.
 - Derivatives must remain under OFL 1.1 — they may not be relicensed under any other license — and
-  must retain the original copyright notices (Adobe / Google LLC, Noto Sans CJK SC / Noto Sans SC),
-  author attribution and the full license text. The font files may not be sold standalone.
+  must retain the original copyright notices (Adobe / Google LLC, Noto Sans CJK SC / Noto Sans SC /
+  Noto Sans KR), author attribution and the full license text. The font files may not be sold standalone.
 - **Reserved Font Names**: `HowsenLiu Fangrun`, `柳皓升方润黑体`, `方润黑体`, `Fangrun` —
   modified derivatives must be renamed before release and may not keep any of these names.
 - Full terms: [LICENSE](LICENSE). Original skeleton attribution retained: Noto Sans CJK SC / Noto
-  Sans SC (Copyright 2014–2021 Adobe and Google LLC, SIL OFL 1.1); rounding, weight pairing and
-  naming by Howsen Liu.
+  Sans SC / Noto Sans KR (Copyright 2014–2021 Adobe and Google LLC, SIL OFL 1.1); rounding, weight
+  pairing and naming by Howsen Liu.
 
 ### Usage scenarios
 

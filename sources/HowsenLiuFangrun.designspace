@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="wght" minimum="100" maximum="700" default="400"/>
+    <axis tag="wdth" name="wdth" minimum="75" maximum="105" default="100"/>
+    <axis tag="opsz" name="opsz" minimum="12" maximum="72" default="16"/>
+  </axes>
+  <sources>
+    <source filename="masters/HowsenLiuFangrun-Light-master.ttf" name="Light" familyname="HowsenLiu Fangrun" stylename="Light">
+      <location>
+        <dimension name="wght" xvalue="100"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </source>
+    <source filename="masters/HowsenLiuFangrun-Regular-master.ttf" name="Regular" familyname="HowsenLiu Fangrun" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="wght" xvalue="400"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </source>
+    <source filename="masters/HowsenLiuFangrun-Medium-master.ttf" name="Medium" familyname="HowsenLiu Fangrun" stylename="Medium">
+      <location>
+        <dimension name="wght" xvalue="500"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </source>
+    <source filename="masters/HowsenLiuFangrun-Bold-master.ttf" name="Bold" familyname="HowsenLiu Fangrun" stylename="Bold">
+      <location>
+        <dimension name="wght" xvalue="700"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </source>
+    <source filename="masters/HowsenLiuFangrun-Cond75-master.ttf" name="Condensed" familyname="HowsenLiu Fangrun" stylename="Condensed">
+      <location>
+        <dimension name="wght" xvalue="400"/>
+        <dimension name="wdth" xvalue="75"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </source>
+    <source filename="masters/HowsenLiuFangrun-Exp105-master.ttf" name="Expanded" familyname="HowsenLiu Fangrun" stylename="Expanded">
+      <location>
+        <dimension name="wght" xvalue="400"/>
+        <dimension name="wdth" xvalue="105"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </source>
+    <source filename="masters/HowsenLiuFangrun-Opt12-master.ttf" name="Caption" familyname="HowsenLiu Fangrun" stylename="Caption">
+      <location>
+        <dimension name="wght" xvalue="400"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="12"/>
+      </location>
+    </source>
+    <source filename="masters/HowsenLiuFangrun-Opt72-master.ttf" name="Display" familyname="HowsenLiu Fangrun" stylename="Display">
+      <location>
+        <dimension name="wght" xvalue="400"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="72"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Light" familyname="HowsenLiu Fangrun" stylename="Light" postscriptfontname="HowsenLiuFangrun-Light">
+      <location>
+        <dimension name="wght" xvalue="100"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </instance>
+    <instance name="Regular" familyname="HowsenLiu Fangrun" stylename="Regular" postscriptfontname="HowsenLiuFangrun-Regular">
+      <location>
+        <dimension name="wght" xvalue="400"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </instance>
+    <instance name="Medium" familyname="HowsenLiu Fangrun" stylename="Medium" postscriptfontname="HowsenLiuFangrun-Medium">
+      <location>
+        <dimension name="wght" xvalue="500"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </instance>
+    <instance name="Bold" familyname="HowsenLiu Fangrun" stylename="Bold" postscriptfontname="HowsenLiuFangrun-Bold">
+      <location>
+        <dimension name="wght" xvalue="700"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </instance>
+    <instance name="Condensed" familyname="HowsenLiu Fangrun" stylename="Condensed" postscriptfontname="HowsenLiuFangrun-Condensed">
+      <location>
+        <dimension name="wght" xvalue="400"/>
+        <dimension name="wdth" xvalue="75"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </instance>
+    <instance name="Expanded" familyname="HowsenLiu Fangrun" stylename="Expanded" postscriptfontname="HowsenLiuFangrun-Expanded">
+      <location>
+        <dimension name="wght" xvalue="400"/>
+        <dimension name="wdth" xvalue="105"/>
+        <dimension name="opsz" xvalue="16"/>
+      </location>
+    </instance>
+    <instance name="Caption" familyname="HowsenLiu Fangrun" stylename="Caption" postscriptfontname="HowsenLiuFangrun-Caption">
+      <location>
+        <dimension name="wght" xvalue="400"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="12"/>
+      </location>
+    </instance>
+    <instance name="Display" familyname="HowsenLiu Fangrun" stylename="Display Bold" postscriptfontname="HowsenLiuFangrun-DisplayBold">
+      <location>
+        <dimension name="wght" xvalue="700"/>
+        <dimension name="wdth" xvalue="100"/>
+        <dimension name="opsz" xvalue="72"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>
