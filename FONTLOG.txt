@@ -62,7 +62,9 @@ Original skeleton
 The glyph skeleton is based on Noto Sans CJK SC / Noto Sans SC and Noto Sans KR,
 Copyright 2014–2021 Adobe and Google LLC (http://www.adobe.com/,
 https://fonts.google.com/), licensed under the SIL Open Font License 1.1.
-Original skeleton design: Ryoko NISHIZUKA, Paul D. Hunt,
+The following names are recorded from the upstream OFL notices for source
+attribution only; they do not indicate any endorsement or collaboration.
+Upstream authors: Ryoko NISHIZUKA, Paul D. Hunt; upstream contributor:
 Sandoll Communications. Noto is a trademark of Google Inc.
 
 License

@@ -177,15 +177,17 @@ common subset in this repo, or subset further to your own copy.
 
 ### Acknowledgments
 
-This typeface was built on the open-source skeleton of the Noto family; the following designers
-and projects are gratefully acknowledged:
+This build is a modified version derived from the open-source Noto family. The upstream copyright
+holders and authors below are recorded for source attribution only; this section does not imply
+any endorsement, sponsorship or collaboration with them.
 
-- **Noto Sans CJK SC / Noto Sans SC** — skeleton and weight masters, by Ryoko NISHIZUKA and
-  Paul D. Hunt, Adobe & Google LLC.
-- **Noto Sans KR** — Hangul skeleton, by Sandoll Communications, Adobe & Google LLC.
+- **Noto Sans CJK SC / Noto Sans SC** — skeleton and weight masters. Authors recorded in the
+  upstream OFL notices: Ryoko NISHIZUKA, Paul D. Hunt. Copyright holders: Adobe and Google LLC.
+- **Noto Sans KR** — Hangul skeleton. Upstream contributor: Sandoll Communications.
+  Copyright holders: Adobe and Google LLC.
 - *Noto* is a trademark of Google LLC.
-- Fillet unification, weight pairing, width and optical-size axes, naming and this build are by
-  Howsen Liu (柳皓升).
+- Fillet unification, weight pairing, width and optical-size axes, naming and this build are the
+  work of Howsen Liu (柳皓升).
 
 ## License
 

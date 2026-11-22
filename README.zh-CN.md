@@ -173,11 +173,13 @@ body { font-family: "HowsenLiu Fangrun", sans-serif; }
 
 ### 致谢
 
-本字体构建于 Noto 系列开源骨架之上，谨向以下设计师与项目致以谢意：
+本次构建为基于 Noto 系列开源字体的修改版本。以下仅按随包保留的 OFL 声明记录上游版权方
+与署名作者，用于来源归属；本章节不构成任何背书、代言或合作关系。
 
-- **Noto Sans CJK SC / Noto Sans SC** —— 骨架与字重母版，Ryoko NISHIZUKA、
-  Paul D. Hunt 设计，Adobe & Google LLC 出品。
-- **Noto Sans KR** —— 谚文骨架，Sandoll Communications 设计，Adobe & Google LLC 出品。
+- **Noto Sans CJK SC / Noto Sans SC** —— 骨架与字重母版；上游 OFL 声明署名作者：
+  Ryoko NISHIZUKA、Paul D. Hunt；版权方：Adobe and Google LLC。
+- **Noto Sans KR** —— 谚文骨架；上游贡献方：Sandoll Communications；
+  版权方：Adobe and Google LLC。
 - *Noto* 为 Google LLC 的商标。
 - 圆角统一、字重配套、宽窄与光学尺寸轴、命名及本次构建由柳皓升 Howsen Liu 完成。
 
