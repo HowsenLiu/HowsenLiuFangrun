@@ -21,7 +21,10 @@
 
 <img src="assets/rule.svg" alt="" width="60%">
 
-<img src="specimen/hero.png" alt="柳皓升方润黑体样张 —— 简体中文、繁體中文、English、日本語、한국어与符号" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/hero-dark.png">
+  <img src="specimen/hero.png" alt="柳皓升方润黑体样张 —— 简体中文、繁體中文、English、日本語、한국어与符号" width="100%">
+</picture>
 
 <img src="assets/marquee.svg" alt="柳皓升方润黑体多语言名称滚动条" width="100%">
 
@@ -195,15 +198,30 @@ TTC 集合包。
 
 ## 样张
 
-![多语言封面](specimen/hero.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/hero-dark.png">
+  <img src="specimen/hero.png" alt="多语言封面" width="100%">
+</picture>
 
-![字重轴](specimen/spec-weights.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/spec-weights-dark.png">
+  <img src="specimen/spec-weights.png" alt="字重轴" width="100%">
+</picture>
 
-![多语言版面](specimen/spec-multilingual.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/spec-multilingual-dark.png">
+  <img src="specimen/spec-multilingual.png" alt="多语言版面" width="100%">
+</picture>
 
-![正文排版](specimen/spec-text.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/spec-text-dark.png">
+  <img src="specimen/spec-text.png" alt="正文排版" width="100%">
+</picture>
 
-![字符集](specimen/spec-charset.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/spec-charset-dark.png">
+  <img src="specimen/spec-charset.png" alt="字符集" width="100%">
+</picture>
 
 ## 网页嵌入
 

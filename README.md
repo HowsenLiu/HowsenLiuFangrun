@@ -21,7 +21,10 @@
 
 <img src="assets/rule.svg" alt="" width="60%">
 
-<img src="specimen/hero.png" alt="HowsenLiu Fangrun specimen — Chinese, Traditional Chinese, English, Japanese, Korean and symbols" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/hero-dark.png">
+  <img src="specimen/hero.png" alt="HowsenLiu Fangrun specimen — Chinese, Traditional Chinese, English, Japanese, Korean and symbols" width="100%">
+</picture>
 
 <img src="assets/marquee.svg" alt="HowsenLiu Fangrun multilingual name marquee" width="100%">
 
@@ -199,15 +202,30 @@ The variable font and the four static companions ship the same GSUB / GPOS featu
 
 ## Specimens
 
-![Multilingual cover](specimen/hero.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/hero-dark.png">
+  <img src="specimen/hero.png" alt="Multilingual cover" width="100%">
+</picture>
 
-![Weight axis](specimen/spec-weights.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/spec-weights-dark.png">
+  <img src="specimen/spec-weights.png" alt="Weight axis" width="100%">
+</picture>
 
-![Multilingual board](specimen/spec-multilingual.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/spec-multilingual-dark.png">
+  <img src="specimen/spec-multilingual.png" alt="Multilingual board" width="100%">
+</picture>
 
-![Body text](specimen/spec-text.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/spec-text-dark.png">
+  <img src="specimen/spec-text.png" alt="Body text" width="100%">
+</picture>
 
-![Character set](specimen/spec-charset.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="specimen/spec-charset-dark.png">
+  <img src="specimen/spec-charset.png" alt="Character set" width="100%">
+</picture>
 
 ## Web usage
 
