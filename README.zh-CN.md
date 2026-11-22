@@ -62,6 +62,7 @@
 | 桌面端 | TTC 集合包 · 四款静态字重单文件 | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
 | 桌面端 | 集合压缩包 | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
 | 网页嵌入 | 网页字体包 · 全量 / 子集 / 演示 WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| 协议 | OFL 1.1 完整协议文本（各压缩包内已附） | `LICENSE-OFL-1.1.txt` | TXT · 4.5 KB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/LICENSE-OFL-1.1.txt) |
 
 ### 给 AI 助手的自取提示词
 

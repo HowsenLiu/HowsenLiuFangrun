@@ -66,6 +66,7 @@ All packages are free to download under the repository OFL 1.1 license.
 | Desktop | TTC collection · four static weights in one file | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
 | Desktop | TTC package | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
 | Web embedding | Web font pack · full / subset / demo WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| License | OFL 1.1 full license text (also inside every pack) | `LICENSE-OFL-1.1.txt` | TXT · 4.5 KB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/LICENSE-OFL-1.1.txt) |
 
 ### Prompt for AI assistants
 
