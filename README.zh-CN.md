@@ -19,6 +19,7 @@
 
 [![English](https://img.shields.io/badge/English-README-1d1d1f.svg)](README.md)
 [![GitHub](https://img.shields.io/badge/GitHub-仓库-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun)
+[![官网](https://img.shields.io/badge/website-howsenliufangrun.pages.dev-1d1d1f.svg)](https://howsenliufangrun.pages.dev/)
 
 <img src="specimen/hero.png" alt="柳皓升方润黑体样张 —— 简体中文、繁體中文、English、日本語、한국어与符号" width="100%">
 
@@ -204,6 +205,7 @@ body { font-family: "HowsenLiu Fangrun", sans-serif; }
 ## 关于
 
 - 设计：[柳皓升（Howsen Liu）](https://github.com/HowsenLiu)
+- 官网：[howsenliufangrun.pages.dev](https://howsenliufangrun.pages.dev/)
 - X / Twitter：[@HowsenLiu_](https://x.com/HowsenLiu_)
 - 行为守则：[`.github/CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md)
 

@@ -19,6 +19,7 @@
 
 [![简体中文](https://img.shields.io/badge/简体中文-README-1d1d1f.svg)](README.zh-CN.md)
 [![GitHub](https://img.shields.io/badge/GitHub-仓库-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun)
+[![Website](https://img.shields.io/badge/website-howsenliufangrun.pages.dev-1d1d1f.svg)](https://howsenliufangrun.pages.dev/)
 
 <img src="specimen/hero.png" alt="HowsenLiu Fangrun specimen — Chinese, Traditional Chinese, English, Japanese, Korean and symbols" width="100%">
 
@@ -208,6 +209,7 @@ common subset in this repo, or subset further to your own copy.
 ## About
 
 - Design: [Howsen Liu (柳皓升)](https://github.com/HowsenLiu)
+- Website: [howsenliufangrun.pages.dev](https://howsenliufangrun.pages.dev/)
 - X / Twitter: [@HowsenLiu_](https://x.com/HowsenLiu_)
 - Code of Conduct: [`.github/CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md)
 
