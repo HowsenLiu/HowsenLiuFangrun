@@ -1,42 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="100%" height="250" role="img" aria-label="Variable axes animation">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="420" role="img" aria-label="Variable axes animation with live sample">
   <style>
-    .fg   { fill: #1d1d1f; }
+    .fg   { fill: #1d1d1f; stroke: #1d1d1f; }
     .sub  { fill: #6a737d; }
     .track{ stroke: #e6e8eb; }
     .thumb{ fill: #c8a45d; stroke: #1d1d1f; stroke-width: 1.5; }
-    .lab  { font-family: -apple-system, "Segoe UI", "PingFang SC", sans-serif; }
+    .lab  { font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .sample { transform-box: fill-box; transform-origin: center; }
     @media (prefers-color-scheme: dark) {
-      .fg   { fill: #f5f5f7; }
+      .fg   { fill: #f5f5f7; stroke: #f5f5f7; }
       .sub  { fill: #9aa5b1; }
       .track{ stroke: #30363d; }
       .thumb{ stroke: #f5f5f7; }
     }
   </style>
 
+  <!-- live sample: weight stroke + width scaleX, synced to the sliders below -->
+  <text x="40" y="44" class="lab sub" font-size="13" font-weight="600" letter-spacing="2">LIVE SAMPLE · 实时预览</text>
+  <g class="sample">
+    <animateTransform attributeName="transform" type="scale" values="0.78 1;1.04 1;0.78 1" keyTimes="0;0.5;1" dur="6s" begin="-2s" repeatCount="indefinite"/>
+    <text x="600" y="132" text-anchor="middle" class="lab fg" font-size="62" font-weight="500"
+          stroke-linejoin="round">
+      <animate attributeName="stroke-width" values="0.6;5.5;0.6" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
+      柳皓升方润黑体
+    </text>
+  </g>
+  <line x1="40" y1="184" x2="1160" y2="184" stroke-width="1" class="track"/>
+
   <!-- wght -->
-  <text x="40" y="62" class="lab fg" font-size="26" font-weight="600">wght</text>
-  <text x="40" y="88" class="lab sub" font-size="17">weight · default 400</text>
-  <line x1="300" y1="70" x2="1050" y2="70" stroke-width="6" stroke-linecap="round" class="track"/>
-  <circle class="thumb" r="12" cx="300" cy="70">
+  <text x="40" y="232" class="lab fg" font-size="26" font-weight="600">wght</text>
+  <text x="40" y="258" class="lab sub" font-size="17">weight · default 400</text>
+  <line x1="300" y1="240" x2="1050" y2="240" stroke-width="6" stroke-linecap="round" class="track"/>
+  <circle class="thumb" r="12" cx="300" cy="240">
     <animate attributeName="cx" values="300;1050;300" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
   </circle>
-  <text x="1160" y="78" text-anchor="end" class="lab sub" font-size="20">100–700</text>
+  <text x="1160" y="248" text-anchor="end" class="lab sub" font-size="20">100–700</text>
 
   <!-- wdth -->
-  <text x="40" y="132" class="lab fg" font-size="26" font-weight="600">wdth</text>
-  <text x="40" y="158" class="lab sub" font-size="17">width · default 100</text>
-  <line x1="300" y1="140" x2="1050" y2="140" stroke-width="6" stroke-linecap="round" class="track"/>
-  <circle class="thumb" r="12" cx="300" cy="140">
+  <text x="40" y="302" class="lab fg" font-size="26" font-weight="600">wdth</text>
+  <text x="40" y="328" class="lab sub" font-size="17">width · default 100</text>
+  <line x1="300" y1="310" x2="1050" y2="310" stroke-width="6" stroke-linecap="round" class="track"/>
+  <circle class="thumb" r="12" cx="300" cy="310">
     <animate attributeName="cx" values="300;1050;300" keyTimes="0;0.5;1" dur="6s" begin="-2s" repeatCount="indefinite"/>
   </circle>
-  <text x="1160" y="148" text-anchor="end" class="lab sub" font-size="20">75–105</text>
+  <text x="1160" y="318" text-anchor="end" class="lab sub" font-size="20">75–105</text>
 
   <!-- opsz -->
-  <text x="40" y="202" class="lab fg" font-size="26" font-weight="600">opsz</text>
-  <text x="40" y="228" class="lab sub" font-size="17">optical size · default 16</text>
-  <line x1="300" y1="210" x2="1050" y2="210" stroke-width="6" stroke-linecap="round" class="track"/>
-  <circle class="thumb" r="12" cx="300" cy="210">
+  <text x="40" y="372" class="lab fg" font-size="26" font-weight="600">opsz</text>
+  <text x="40" y="398" class="lab sub" font-size="17">optical size · default 16</text>
+  <line x1="300" y1="380" x2="1050" y2="380" stroke-width="6" stroke-linecap="round" class="track"/>
+  <circle class="thumb" r="12" cx="300" cy="380">
     <animate attributeName="cx" values="300;1050;300" keyTimes="0;0.5;1" dur="6s" begin="-4s" repeatCount="indefinite"/>
   </circle>
-  <text x="1160" y="218" text-anchor="end" class="lab sub" font-size="20">12–72</text>
+  <text x="1160" y="388" text-anchor="end" class="lab sub" font-size="20">12–72</text>
 </svg>

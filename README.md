@@ -147,7 +147,7 @@ Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modi
 
 ## Variable axes
 
-<img src="assets/axes.svg" alt="Animated variable axes: weight, width and optical size sliders" width="100%">
+<img src="assets/axes.svg" alt="Animated variable axes: live sample weight and width, with weight, width and optical size sliders" width="100%">
 
 | Axis | Range · Default |
 |:-:|:-:|
@@ -202,6 +202,8 @@ The variable font and the four static companions ship the same GSUB / GPOS featu
 
 ## Specimens
 
+<img src="assets/sweep.svg" alt="" width="100%">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="specimen/hero-dark.png">
   <img src="specimen/hero.png" alt="Multilingual cover" width="100%">
@@ -244,6 +246,8 @@ The full-charset WOFF2 is large and ships as a Release asset; for live pages use
 common subset in this repo, or subset further to your own copy.
 
 ## About
+
+<img src="assets/orbit.svg" alt="Abstract rounded-square brand mark in orbit" width="100%">
 
 - Design: [Howsen Liu (柳皓升)](https://github.com/HowsenLiu)
 - Website: [howsenliufangrun.pages.dev](https://howsenliufangrun.pages.dev/)

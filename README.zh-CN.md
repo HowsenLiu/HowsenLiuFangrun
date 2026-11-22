@@ -143,7 +143,7 @@
 
 ## 可变轴
 
-<img src="assets/axes.svg" alt="可变轴动画：字重、宽度、光学尺寸三条滑块" width="100%">
+<img src="assets/axes.svg" alt="可变轴动画：样例文字随字重与宽度变化，下接字重、宽度、光学尺寸三条滑块" width="100%">
 
 | 轴 | 范围 · 默认值 |
 |:-:|:-:|
@@ -198,6 +198,8 @@ TTC 集合包。
 
 ## 样张
 
+<img src="assets/sweep.svg" alt="" width="100%">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="specimen/hero-dark.png">
   <img src="specimen/hero.png" alt="多语言封面" width="100%">
@@ -240,6 +242,8 @@ body { font-family: "HowsenLiu Fangrun", sans-serif; }
 或按文案自行二次子集化。
 
 ## 关于
+
+<img src="assets/orbit.svg" alt="圆角方形品牌母题环绕动效" width="100%">
 
 - 设计：[柳皓升（Howsen Liu）](https://github.com/HowsenLiu)
 - 官网：[howsenliufangrun.pages.dev](https://howsenliufangrun.pages.dev/)
