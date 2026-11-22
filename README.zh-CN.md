@@ -52,14 +52,17 @@
 
 ### Release 附件
 
-| 安装包 | 文件 | 格式 · 体积 | 下载 |
-|---|---|---|---|
-| 可变字体包 | `HowsenLiuFangrun-VF.ttf` | TTF · 184.1 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
-| 可变完整包 · VF + 全量 WOFF2 + FONTLOG | `HowsenLiuFangrun-VF.zip` | ZIP · 151.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
-| 静态字重包 · Light / Regular / Medium / Bold | `HowsenLiuFangrun-Static-TTF.zip` | ZIP · 56.5 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
-| TTC 集合包 · 四款静态字重单文件 | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
-| 集合压缩包 | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
-| 网页字体包 · 全量 / 子集 / 演示 WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+所有安装包均按仓库 OFL 1.1 协议免费下载。
+
+| 分类 | 安装包 | 文件 | 格式 · 体积 | 下载 |
+|---|---|---|---|---|
+| 桌面端 | 可变字体 | `HowsenLiuFangrun-VF.ttf` | TTF · 184.1 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
+| 桌面端 | 可变完整包 · VF + 全量 WOFF2 + FONTLOG | `HowsenLiuFangrun-VF.zip` | ZIP · 151.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
+| 桌面端 | 静态字重包 · Light / Regular / Medium / Bold | `HowsenLiuFangrun-Static-TTF.zip` | ZIP · 56.5 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
+| 桌面端 | TTC 集合包 · 四款静态字重单文件 | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
+| 桌面端 | 集合压缩包 | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
+| 网页嵌入 | 网页字体包 · 全量 / 子集 / 演示 WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| 源码站点 | 网页源码 · HTML / CSS / JS + 站点 WOFF2 | `HowsenLiuFangrun-website-source.zip` | ZIP · 2.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-website-source.zip) |
 
 ### 给 AI 助手的自取提示词
 
@@ -103,6 +106,16 @@
 仓库：https://github.com/HowsenLiu/HowsenLiuFangrun
 包内为网站嵌入用 WOFF2 压缩版本。
 按仓库 LICENSE（SIL OFL 1.1）授权使用：可免费商用，也允许修改与制作衍生字体；衍生版本须继续以 OFL 1.1 发布，并保留署名与许可文本；字体文件不得脱离软件单独售卖。
+```
+
+**网页源码包**
+
+```text
+请从 GitHub 获取「柳皓升方润黑体 / HowsenLiu Fangrun」网页源码。
+直达下载：https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-website-source.zip
+仓库：https://github.com/HowsenLiu/HowsenLiuFangrun
+纯 HTML / CSS / JS 站点，含站点子集与演示 WOFF2，无需构建步骤。
+包内字体按仓库 LICENSE（SIL OFL 1.1）授权：再分发时保留版权声明与许可文本；字体文件不得脱离软件单独售卖。
 ```
 
 ## 字符支持

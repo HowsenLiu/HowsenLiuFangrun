@@ -56,14 +56,17 @@ points** in total.
 
 ### Release assets
 
-| Pack | File | Format · Size | Download |
-|---|---|---|---|
-| Variable Font Pack | `HowsenLiuFangrun-VF.ttf` | TTF · 184.1 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
-| Variable Package · VF + full WOFF2 + FONTLOG | `HowsenLiuFangrun-VF.zip` | ZIP · 151.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
-| Static Weights Pack · Light / Regular / Medium / Bold | `HowsenLiuFangrun-Static-TTF.zip` | ZIP · 56.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
-| TTC Collection · four static weights in one file | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
-| TTC Package | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
-| Web Font Pack · full / subset / demo WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+All packages are free to download under the repository OFL 1.1 license.
+
+| Category | Pack | File | Format · Size | Download |
+|---|---|---|---|---|
+| Desktop | Variable font | `HowsenLiuFangrun-VF.ttf` | TTF · 184.1 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
+| Desktop | Variable package · VF + full WOFF2 + FONTLOG | `HowsenLiuFangrun-VF.zip` | ZIP · 151.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
+| Desktop | Static weights · Light / Regular / Medium / Bold | `HowsenLiuFangrun-Static-TTF.zip` | ZIP · 56.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
+| Desktop | TTC collection · four static weights in one file | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
+| Desktop | TTC package | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
+| Web embedding | Web font pack · full / subset / demo WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
+| Source & site | Website source · HTML / CSS / JS + site webfonts | `HowsenLiuFangrun-website-source.zip` | ZIP · 2.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-website-source.zip) |
 
 ### Prompt for AI assistants
 
@@ -107,6 +110,16 @@ Direct download: https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/d
 Repo: https://github.com/HowsenLiu/HowsenLiuFangrun
 Compressed WOFF2 builds for web embedding.
 Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
+```
+
+**Website source**
+
+```text
+Fetch the "HowsenLiu Fangrun" website source from GitHub.
+Direct download: https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-website-source.zip
+Repo: https://github.com/HowsenLiu/HowsenLiuFangrun
+Plain HTML / CSS / JS site with the page subset and demo WOFF2; no build step.
+The bundled fonts follow the repository LICENSE (SIL OFL 1.1): keep the copyright notice and license text when redistributing; the font files may not be sold standalone.
 ```
 
 ## Character support
