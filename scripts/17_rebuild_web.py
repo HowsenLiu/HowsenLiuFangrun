@@ -15,6 +15,7 @@ HTML = os.path.join(os.path.dirname(ROOT), '发布包', '2_网页部署_Cloudfla
 
 EXTRA = ('永和圆方润皓升字体设计可变光学尺寸宽度重量柳'
          '国日田力加互京华符标点数网页版权授免费商用开源软师制排印屏显'
+         '가나다라마바사아자차카타파하글로벌한국어폰트설계방운고딕'
          '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
          '—…·～！。，、；：？“”‘’（）《》〈〉←→↑↓')
 

@@ -11,25 +11,25 @@
 
 **方折骨架，圆润收口 —— 一款为屏幕与印刷打磨的中文无衬线字体。**
 
-[![Version](https://img.shields.io/badge/version-2.000-111111.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest)
-[![License](https://img.shields.io/badge/license-OFL%201.1-111111.svg)](LICENSE)
-[![Glyphs](https://img.shields.io/badge/glyphs-44%2C655-6a737d.svg)](#字符支持)
+**柳皓升方润黑体 · 柳皓升方潤黑體 · HowsenLiu Fangrun · 柳皓升方潤ゴシック · 柳皓升방운고딕**
 
-[English](README.md) · [字体官网](https://howsenliufangrun.pages.dev) · [GitHub](https://github.com/HowsenLiu/HowsenLiuFangrun)
+[![Version](https://img.shields.io/badge/version-2.000-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest)
+[![License](https://img.shields.io/badge/license-OFL%201.1-1d1d1f.svg)](LICENSE)
+[![Glyphs](https://img.shields.io/badge/glyphs-44%2C731-6a737d.svg)](#字符支持)
 
-<a href="#gh-light-mode-only">
-  <img src="specimen/hero.gif" alt="柳皓升方润黑体样张轮播 —— 中文、English、日本語、한국어与符号" width="100%">
-</a>
-<a href="#gh-dark-mode-only">
-  <img src="specimen/hero-dark.gif" alt="柳皓升方润黑体样张轮播 —— 中文、English、日本語、한국어与符号" width="100%">
-</a>
+[![English](https://img.shields.io/badge/English-README-1d1d1f.svg)](README.md)
+[![字体官网](https://img.shields.io/badge/官网-在线访问-1d1d1f.svg)](https://howsenliufangrun.pages.dev)
+[![GitHub](https://img.shields.io/badge/GitHub-仓库-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun)
+
+<img src="specimen/hero.png" alt="柳皓升方润黑体样张 —— 简体中文、繁體中文、English、日本語、한국어与符号" width="100%">
 
 </div>
 
 柳皓升方润黑体是一款在人文观感与几何骨架之间取得平衡的中文无衬线字体。整体以略方的
 建筑感骨架为底，在每一处笔画交接与端点做同一半径的圆角处理：结构方折，细节柔和，
 长句阅读干净，标题醒目。字体覆盖简繁中文、韩文谚文（全部预组音节与字母）、拉丁及欧洲
-带调字母、希腊字母、西里尔字母、日文假名、注音符号、阿拉伯数字与各类常用标点符号。
+带调字母、希腊字母、西里尔字母、日文假名、注音符号、上标 / 下标 / 修饰字母、阿拉伯
+数字与各类常用标点符号，共计 **44,731 字形 / 44,828 码位**。
 
 ## 下载安装
 
@@ -52,14 +52,14 @@
 
 ### Release 附件
 
-| 版本 | 格式 · 体积 | 下载 |
-|---|---|---|
-| 可变字体 | `.ttf` · 192.9 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
-| 静态字重包 | `.zip` · 59.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
-| 静态集合包 | `.ttc` · 157.5 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
-| 网页字体包 | `.zip` · 84.3 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
-| 可变完整包 | `.zip` · 158.7 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
-| 集合压缩包 | `.zip` · 58.6 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
+| 安装包 | 文件 | 格式 · 体积 | 下载 |
+|---|---|---|---|
+| 可变字体包 | `HowsenLiuFangrun-VF.ttf` | TTF · 184.1 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
+| 可变完整包 · VF + 全量 WOFF2 + FONTLOG | `HowsenLiuFangrun-VF.zip` | ZIP · 151.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
+| 静态字重包 · Light / Regular / Medium / Bold | `HowsenLiuFangrun-Static-TTF.zip` | ZIP · 56.5 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
+| TTC 集合包 · 四款静态字重单文件 | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
+| 集合压缩包 | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
+| 网页字体包 · 全量 / 子集 / 演示 WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
 
 ### 给 AI 助手的自取提示词
 
@@ -107,16 +107,17 @@
 
 ## 字符支持
 
-| 文字 | 支持情况 |
-|:-:|:-:|
-| 汉字 | 覆盖 GBK 全集、GB18030 一级、Big5 繁体；共计 44,655 字形 / 44,752 码位 |
-| 韩文谚文 | 全部 11,172 个预组音节（가–힣）、Jamo 字母、扩展 A/B、兼容字母与半宽形式 |
-| 拉丁与欧洲字母 | 基础拉丁 + 带变音字母（À Á Â Ä Ç É È Ê Ë Ñ Ó Ô Ö Ú Ü ã õ ç 等），可支持英、法、德、西、葡等语言 |
-| 希腊 / 西里尔 | 基础希腊字母、西里尔字母 |
-| 日文假名 | 平假名、片假名 |
-| 注音符号 | 注音字母 ㄅㄆㄇㄈ |
-| 数字 | 阿拉伯数字 0–9、罗马数字 Ⅰ–Ⅹ |
-| 标点符号 | 中西文标点、箭头、几何形、货币符号与常用符号 |
+| 文字 / 区块 | 覆盖情况 |
+|---|---|
+| 汉字 · 简繁中文 | GBK 全集、GB 18030 一/二级汉字、Big5 繁体；20,976 个统一表意文字 + 6,582 个扩展 A 汉字 |
+| 韩文谚文 | 全部 11,172 个预组音节（가–힣）、254 个 Jamo 字母、扩展 A/B、兼容字母与半宽形式 |
+| 日文假名 | 平假名 93 个、片假名 96 个 |
+| 拉丁与欧洲字母 | 基础拉丁 + 拉丁扩展 A/补充区与变音字母（À Á Â Ä Ç É È Ê Ë Ñ Ó Ô Ö Ú Ü ã õ ç 等），可支持英、法、德、西、葡、意等语言 |
+| 希腊 / 西里尔 | 基础希腊字母（49 码位）、西里尔字母（66 码位） |
+| 注音符号 | 43 个注音字母 ㄅㄆㄇㄈ |
+| 数字与字母标记 | 阿拉伯数字 0–9、罗马数字 Ⅰ–Ⅹ、上标 / 下标 / 修饰字母 |
+| 标点符号 | 中西文标点、箭头、几何形、货币符号、版权 / 商标标记与常用界面符号 |
+| **合计** | **44,731 字形 / 44,828 码位** |
 
 ## 可变轴
 
@@ -137,13 +138,15 @@ TTC 集合包。
 
 ## 样张
 
-![总览](specimen/01-overview.png)
+![多语言封面](specimen/hero.png)
 
-![字重展示](specimen/02-weights.png)
+![字重轴](specimen/spec-weights.png)
 
-![正文排版](specimen/05-text.png)
+![多语言版面](specimen/spec-multilingual.png)
 
-![拉丁、符号与谚文](specimen/08-latin.png)
+![正文排版](specimen/spec-text.png)
+
+![字符集](specimen/spec-charset.png)
 
 ## 网页嵌入
 
@@ -168,17 +171,33 @@ body { font-family: "HowsenLiu Fangrun", sans-serif; }
 - X / Twitter：[@HowsenLiu_](https://x.com/HowsenLiu_)
 - 行为守则：[`.github/CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md)
 
+### 致谢
+
+本字体构建于 Noto 系列开源骨架之上，谨向以下设计师与项目致以谢意：
+
+- **Noto Sans CJK SC / Noto Sans SC** —— 骨架与字重母版，Ryoko NISHIZUKA、
+  Paul D. Hunt 设计，Adobe & Google LLC 出品。
+- **Noto Sans KR** —— 谚文骨架，Sandoll Communications 设计，Adobe & Google LLC 出品。
+- *Noto* 为 Google LLC 的商标。
+- 圆角统一、字重配套、宽窄与光学尺寸轴、命名及本次构建由柳皓升 Howsen Liu 完成。
+
 ## 许可证
 
-- 本字体以 **SIL Open Font License 1.1（OFL 1.1）** 发布，使用边界遵循 OFL 1.1 协议原文：
-  可免费用于个人与商业项目，允许修改字形、调整参数与制作衍生字体。
-- 衍生版本必须继续以 OFL 1.1 发布，不得更换为其他许可证，并须保留原始版权声明
-  （Adobe / Google LLC，Noto Sans CJK SC / Noto Sans SC / Noto Sans KR）、作者署名与许可全文；字体文件
-  不得脱离软件单独售卖。
-- **保留字体名**：`HowsenLiu Fangrun`、`柳皓升方润黑体`、`方润黑体`、`Fangrun`；衍生修改版不得沿用以上任何名称，需更名后再发布。
-- 完整条款见 [LICENSE](LICENSE)；原始骨架署名保留：Noto Sans CJK SC / Noto Sans SC /
-  Noto Sans KR（Copyright 2014–2021 Adobe and Google LLC，SIL OFL 1.1）；圆角处理、字重配套与
-  命名由柳皓升 Howsen Liu 完成。
+本仓库附带 **两份 SIL Open Font License 1.1（OFL 1.1）** 文本：
+
+1. **本字体发布版** —— [`LICENSE`](LICENSE)：Copyright 2014–2021 Adobe and Google LLC
+   （Noto Sans CJK SC / Noto Sans SC / Noto Sans KR）；Copyright 2026 柳皓升 Howsen Liu
+   （https://github.com/HowsenLiu），以 OFL 1.1 发布。
+2. **上游保留源文件** —— [`sources/kr/OFL-NotoSansKR.txt`](sources/kr/OFL-NotoSansKR.txt)：
+   内嵌 Noto Sans KR 骨架源文件的原始 OFL 1.1 声明，Copyright 2014–2021 Adobe，
+   保留字体名 `Source`，按原文保留未作改动。
+
+使用边界遵循 OFL 1.1 协议原文：可免费用于个人与商业项目，允许修改字形、调整参数与
+制作衍生字体。衍生版本必须继续以 OFL 1.1 发布，不得更换为其他许可证，并须保留原始
+版权声明、作者署名与许可全文；字体文件不得脱离软件单独售卖。
+
+- **保留字体名**：`HowsenLiu Fangrun`、`柳皓升方润黑体`、`方润黑体`、`Fangrun`；
+  衍生修改版不得沿用以上任何名称，需更名后再发布。
 
 ### 使用场景对照
 

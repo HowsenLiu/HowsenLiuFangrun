@@ -1,6 +1,8 @@
-"""04  生成三轴样张（build/specimen/）
+"""04  生成高端多语言样张（build/specimen/）
 
 全部用可变字体本身渲染（PIL + FreeType 轴控制），所见即真实字形。
+版式：白底、克制黑白灰、细分割线、大留白；覆盖简繁中、英、日、韩、
+欧洲变音字母、希腊/西里尔、假名与常用符号。
 """
 from __future__ import annotations
 
@@ -17,6 +19,7 @@ BODY = (43, 43, 48)
 GREY = (113, 113, 122)
 FAINT = (161, 161, 170)
 LINE = (231, 231, 234)
+PAPER = (255, 255, 255)
 
 _cache = {}
 
@@ -34,8 +37,8 @@ def font(size, wght=400, wdth=100, opsz=16):
     return f
 
 
-def canvas(w, h):
-    img = Image.new('RGB', (w * SS, h * SS), 'white')
+def canvas(w, h, bg=PAPER):
+    img = Image.new('RGB', (w * SS, h * SS), bg)
     return img, ImageDraw.Draw(img)
 
 
@@ -88,152 +91,127 @@ def rule(dr, x1, y, x2, color=LINE, width=1):
 def main():
     os.makedirs(OUT, exist_ok=True)
 
-    # ---------------- 01 总览
-    W, H = 1240, 900
+    # ---------------- 01 封面 hero
+    W, H = 1240, 760
     img, dr = canvas(W, H)
-    T(dr, (64, 40), '柳皓升方润黑体', 84, wght=500)
-    T(dr, (66, 140), 'HowsenLiu Fangrun Variable  ·  wght × wdth × opsz', 26, wght=300, ink=GREY)
-    T(dr, (66, 184), '一个骨架，三种呼吸。', 30)
-    y = 258
-    rows = [('wght', '100 → 700', '100  Light', 100, 100),
-            ('wght', '100 → 700', '400  Regular', 400, 100),
-            ('wght', '100 → 700', '700  Bold', 700, 100),
-            ('wdth', '75 → 105', '75  Condensed', 400, 75),
-            ('wdth', '75 → 105', '105  Expanded', 400, 105)]
-    for tag, rng, sample, wg, wd in rows:
-        L(dr, (66, y + 16), f'{tag}  {rng}', 12)
-        T(dr, (66, y + 36), sample, 14, ink=GREY)
-        T(dr, (206, y + 2), '永 和 圆 方 润 皓 升 字', 44, wght=wg, wdth=wd)
-        y += 88
-        rule(dr, 66, y - 16, W - 66)
+    L(dr, (72, 72), 'HOWSENLIU FANGRUN  ·  TYPEFACE 2.000', 12, color=GREY, wght=600)
+    rule(dr, 72, 108, W - 72)
 
-    L(dr, (66, y + 6), 'opsz  12 → 72', 12)
-    T(dr, (66, y + 26), '12  Caption', 14, ink=GREY)
-    T(dr, (206, y), '小字加粗、中宫放大', 40, opsz=12)
-    T(dr, (836, y), '大字收细、细节精致', 40, opsz=72)
-    L(dr, (206, y + 52), '42 pt  ·  opsz 12', 12, color=FAINT)
-    L(dr, (836, y + 52), '42 pt  ·  opsz 72', 12, color=FAINT)
-    T(dr, (66, H - 56), '44,000+ 字符  ·  中文 / 日文 / 谚文  ·  SIL OFL 1.1  ·  免费商用', 14, ink=GREY)
-    save(img, W, H, '01-overview.png')
+    T(dr, (72, 208), '柳皓升方润黑体', 92, wght=500)
+    T(dr, (74, 326), 'HowsenLiu Fangrun', 40, wght=300, ink=GREY)
+    T(dr, (74, 392), '方折骨架，圆润收口。Square skeleton, soft terminals.', 22, ink=BODY)
 
-    # ---------------- 02 字重
-    W, H = 1240, 780
-    img, dr = canvas(W, H)
-    L(dr, (64, 44), 'WEIGHT  wght 100 – 700', 12)
-    T(dr, (64, 66), 'HowsenLiu Fangrun', 34)
-    y = 138
-    for wg, name in ((100, 'Light 100'), (400, 'Regular 400'),
-                     (500, 'Medium 500'), (700, 'Bold 700')):
-        L(dr, (64, y + 34), name, 12)
-        T(dr, (230, y), '柳皓升方润黑体 Aa 0123', 52, wght=wg)
-        y += 104
-        rule(dr, 64, y - 22, W - 64)
-    save(img, W, H, '02-weights.png')
-
-    # ---------------- 03 字宽
-    W, H = 1240, 700
-    img, dr = canvas(W, H)
-    L(dr, (64, 44), 'WIDTH  wdth 75 – 105', 12)
-    T(dr, (64, 66), '字宽轴：同一骨架，横向量变', 34)
-    y = 142
-    for wd, name in ((75, 'Condensed 75'), (100, 'Normal 100'), (105, 'Expanded 105')):
-        L(dr, (64, y + 30), name, 12)
-        T(dr, (232, y), '方润黑体 可变字宽 HowsenLiu', 42, wdth=wd)
-        y += 96
-        rule(dr, 64, y - 20, W - 64)
-    T(dr, (64, H - 110), '窄体用于标题与信息密集的版面，宽体适合品牌与海报。', 15, ink=GREY)
-    save(img, W, H, '03-width.png')
-
-    # ---------------- 04 光学尺寸
-    W, H = 1240, 780
-    img, dr = canvas(W, H)
-    L(dr, (64, 44), 'OPTICAL SIZE  opsz 12 – 72', 12)
-    T(dr, (64, 66), '同一字号，不同光学尺寸', 34)
-
-    L(dr, (64, 138), '正文 13 px · opsz 12 与 16 对照', 12)
-    para = ('中文字体的可读性，来自笔画与中宫的比例。小字需要更实的笔画、'
-            '更开的中宫，才能在小尺寸下站得住；大字则应收细笔画、'
-            '收紧细节，让结构与留白更精致。')
-    T(dr, (64, 172), para, 13, opsz=12, ink=BODY, spacing=9, wrap=28)
-    T(dr, (664, 172), para, 13, opsz=16, ink=BODY, spacing=9, wrap=28)
-    L(dr, (64, 352), 'opsz 12 · Caption', 12)
-    L(dr, (664, 352), 'opsz 16 · Text（默认）', 12)
-    rule(dr, 64, 380, W - 64)
-
-    L(dr, (64, 410), '标题 88 px · 同字号、两端光学尺寸', 12)
-    T(dr, (64, 442), '方润黑体', 88, wght=700, opsz=72)
-    T(dr, (664, 442), '方润黑体', 88, wght=700, opsz=12)
-    L(dr, (64, 606), 'opsz 72 · 笔画收细、细节精致', 12)
-    L(dr, (664, 606), 'opsz 12 · 笔画加粗、中宫放大', 12)
-    T(dr, (64, H - 56), 'opsz 默认 16；12–16 适配正文，24–72 适配标题与展示。', 14, ink=GREY)
-    save(img, W, H, '04-optical.png')
-
-    # ---------------- 05 文本
-    W, H = 1240, 880
-    img, dr = canvas(W, H)
-    L(dr, (64, 44), 'TEXT  正文排版', 12)
-    T(dr, (64, 66), '方中带圆，温润如玉', 44, wght=500)
-    body = [
-        '柳皓升方润黑体以略方的骨架为底，在每一处笔画交接与端点都做了同一半径的圆角处理。'
-        '它不靠装饰取胜，而是让方块结构在细节处变得温和，长句阅读时保持稳定与安静。',
-        '同一套骨架派生出字重、字宽与光学尺寸三根轴：字重从 100 到 700 连续可调，'
-        '字宽从 75 的窄体到 105 的宽体，光学尺寸则让 12 号正文与 72 号标题各有各的笔画分寸。',
-        'Because every master shares one skeleton, the interpolation never distorts: '
-        'contour counts, point counts and point order are identical across all eight masters.',
+    y = 512
+    langs = [
+        ('简体中文', '柳皓升方润黑体'),
+        ('繁體中文', '柳皓升方潤黑體'),
+        ('English', 'HowsenLiu Fangrun'),
+        ('日本語', '柳皓升方潤ゴシック'),
+        ('한국어', '柳皓升방운고딕'),
     ]
-    y = 168
-    for i, p in enumerate(body):
-        T(dr, (64, y), p, 17, ink=BODY, spacing=11, wrap=62)
-        y += 132
-    T(dr, (64, H - 110), '17 pt · wght 400 · wdth 100 · opsz 16', 13, ink=GREY)
-    T(dr, (64, H - 82), '行距 1.85 · 字距 0.01 em', 13, ink=GREY)
-    save(img, W, H, '05-text.png')
+    col_w = (W - 144) / 5
+    for i, (tag, word) in enumerate(langs):
+        x = 72 + i * col_w
+        L(dr, (x, y), tag, 11, color=FAINT)
+        T(dr, (x, y + 22), word, 20, wght=400)
+    T(dr, (72, H - 64), '44,731 字形 · 44,828 码位  ·  简繁中 / 谚文 / 假名 / 拉丁 / 希腊 / 西里尔  ·  SIL OFL 1.1',
+      13, ink=GREY)
+    save(img, W, H, 'hero.png')
 
-    # ---------------- 06 字符集
+    # ---------------- 02 字重轴
+    W, H = 1240, 720
+    img, dr = canvas(W, H)
+    L(dr, (72, 56), 'WEIGHT  ·  wght 100 – 700', 12, color=GREY, wght=600)
+    T(dr, (72, 84), '同一骨架，四档粗细', 34)
+
+    y = 180
+    rows = [(100, 'Light 100'), (400, 'Regular 400'), (500, 'Medium 500'), (700, 'Bold 700')]
+    for wg, name in rows:
+        L(dr, (72, y + 26), name, 12)
+        T(dr, (288, y), 'Aa 柳皓升方润黑体 0123456789', 46, wght=wg)
+        y += 112
+        rule(dr, 72, y - 28, W - 72)
+    T(dr, (72, H - 56), '字重变化只加厚笔画；圆角半径、中宫与结构比例保持不变。', 14, ink=GREY)
+    save(img, W, H, 'spec-weights.png')
+
+    # ---------------- 03 多语言样张
+    W, H = 1240, 920
+    img, dr = canvas(W, H)
+    L(dr, (72, 56), 'MULTILINGUAL  ·  同一副骨架，横跨多种文字', 12, color=GREY, wght=600)
+
+    blocks = [
+        ('简体中文 · Simplified Chinese', '柳皓升方润黑体', '方圆之间，温润而坚定'),
+        ('繁體中文 · Traditional Chinese', '柳皓升方潤黑體', '方圓之間，溫潤而堅定'),
+        ('English', 'HowsenLiu Fangrun', 'Between square and softness'),
+        ('日本語 · Japanese', '柳皓升方潤ゴシック', '角と丸みのあいだ'),
+        ('한국어 · Korean', '柳皓升방운고딕', '네모난 골격, 부드러운 모서리'),
+        ('European · 欧洲语言', 'ÀÉÎÕÜ ñéüöß', 'Café · Grün · São · € £ ¥'),
+    ]
+    col_w = (W - 144 - 48) / 2
+    row_h = 224
+    for i, (tag, big, sub) in enumerate(blocks):
+        col, row = i % 2, i // 2
+        x = 72 + col * (col_w + 48)
+        y = 132 + row * row_h
+        rule(dr, x, y, x + col_w)
+        L(dr, (x, y + 24), tag, 12, color=FAINT)
+        T(dr, (x, y + 58), big, 38, wght=500)
+        T(dr, (x, y + 128), sub, 18, ink=GREY)
+
+    y = 132 + 3 * row_h
+    rule(dr, 72, y, W - 72)
+    L(dr, (72, y + 24), 'SYMBOLS · 标点与常用符号', 12, color=FAINT)
+    T(dr, (72, y + 58), '，。、！？：；（）「」《》—…·★☆◆◇○●→←↑↓ € £ ¥ © ® ™', 26, ink=BODY)
+    save(img, W, H, 'spec-multilingual.png')
+
+    # ---------------- 04 正文排版
+    W, H = 1240, 820
+    img, dr = canvas(W, H)
+    L(dr, (72, 56), 'TEXT  ·  正文排版', 12, color=GREY, wght=600)
+    T(dr, (72, 88), '方中带圆，温润如玉', 40, wght=500)
+
+    zh = ('柳皓升方润黑体以略方的骨架为底，在每一处笔画交接与端点都做了同一半径的圆角处理。'
+          '它不靠装饰取胜，而是让方块结构在细节处变得温和，长句阅读时保持稳定与安静。')
+    en = ('Because every master shares one skeleton, the interpolation never distorts: '
+          'contour counts, point counts and point order are identical across all eight masters.')
+    T(dr, (72, 176), zh, 17, ink=BODY, spacing=12, wrap=30)
+    T(dr, (660, 176), en, 16, ink=BODY, spacing=12, wrap=28)
+
+    rule(dr, 72, 470, W - 72)
+    L(dr, (72, 500), '日本語 · 本文組版', 12, color=FAINT)
+    T(dr, (72, 528), '少し角張った骨格をベースに、角と末端を同じ半径で丸めたゴシック体。', 18, ink=BODY)
+    L(dr, (72, 592), '한국어 · 본문 조판', 12, color=FAINT)
+    T(dr, (72, 620), '약간 각진 골격을 바탕으로 획의 이음새와 끝을 같은 반지름으로 둥글게 처리했습니다.', 18, ink=BODY)
+
+    T(dr, (72, H - 96), '17 pt · wght 400 · wdth 100 · opsz 16', 13, ink=GREY)
+    T(dr, (72, H - 64), '行距 1.85 · 字距 0.01 em', 13, ink=GREY)
+    save(img, W, H, 'spec-text.png')
+
+    # ---------------- 05 字符集
     W, H = 1240, 880
     img, dr = canvas(W, H)
-    L(dr, (64, 44), 'CHARSET  字符集', 12)
-    txt_path = ('C:\\Users\\12784\\Desktop\\字体\\柳皓升方润黑体-发布包\\发布包'
-                '\\1_GitHub仓库上传\\sources\\charset\\webfont-subset.txt')
-    chars = [c for c in open(txt_path, encoding='utf-8').read()
-             if '\u4e00' <= c <= '\u9fff'][:600]
-    x, y, per = 64, 88, 28
-    for i, ch in enumerate(chars):
-        if i and i % per == 0:
-            x, y = 64, y + 28
-        T(dr, (x, y), ch, 19)
-        x += 38
-    T(dr, (64, H - 50), '共 44,000+ 字形 · 覆盖 GBK 全集、GB 18030 一/二级汉字与全套谚文音节', 13, ink=GREY)
-    save(img, W, H, '06-charset.png')
+    L(dr, (72, 56), 'CHARSET  ·  字符覆盖', 12, color=GREY, wght=600)
 
-    # ---------------- 07 圆角细节
-    W, H = 1240, 640
-    img, dr = canvas(W, H)
-    L(dr, (64, 44), 'CORNER  88 / 1000 em · 统一圆角', 12)
-    for i, (wg, name) in enumerate(((100, 'Light 100'), (400, 'Regular 400'),
-                                    (700, 'Bold 700'))):
-        L(dr, (64 + i * 400, 92), name, 13)
-        T(dr, (64 + i * 400, 116), '永', 200, wght=wg)
-        T(dr, (64 + i * 400 + 225, 280), '口', 92, wght=wg)
-        T(dr, (64 + i * 400 + 330, 280), '口', 92, wght=wg, opsz=72)
-    T(dr, (64, H - 50),
-      '所有角与端点使用同一半径；字重变化只加厚笔画，不改圆角规则。右侧对比 opsz 72。',
+    rows = [
+        ('汉字 Han', '柳皓升方润黑体 结构骨架 温润 端正 谦和 安宁 稳重'),
+        ('日文假名 Kana', 'あいうえお かきくけこ さしすせそ アイウエオ カキクケコ'),
+        ('谚文 Hangul', '가나다라마바사 아자차카타파하 글로벌 한국어 폰트'),
+        ('拉丁 / 欧洲 Latin', 'ABCDEFGH a b c d e f g h Ñ É Ü ß Ø Ç ñ é ü ö € ¥'),
+        ('希腊 / 西里尔 Greek · Cyrillic', 'ΑΒΓΔ αβγδ Ддбвж Ллмф Йй'),
+        ('标点符号 Symbols', '，。！？· ★ ☆ ◆ ◇ ○ ● → ← ↑ ↓ № § © ® ™'),
+    ]
+    y = 132
+    for tag, sample in rows:
+        L(dr, (72, y), tag, 12, color=FAINT)
+        T(dr, (300, y - 6), sample, 22, ink=BODY)
+        y += 96
+        rule(dr, 72, y - 24, W - 72)
+
+    T(dr, (72, H - 96), '44,731 字形 · 44,828 码位', 16, wght=600)
+    T(dr, (72, H - 62), '覆盖 GBK 全集、GB 18030 一/二级汉字、Big5 繁体；11,172 个谚文预组音节与 Jamo；'
+                         '平假名 / 片假名；注音符号；拉丁扩展、希腊、西里尔；上标 / 下标 / 修饰字母与常用标点符号。',
       13, ink=GREY)
-    save(img, W, H, '07-corners.png')
-
-    # ---------------- 08 拉丁与符号
-    W, H = 1240, 600
-    img, dr = canvas(W, H)
-    L(dr, (64, 44), 'LATIN & SYMBOLS', 12)
-    T(dr, (64, 74), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 38, wght=300)
-    T(dr, (64, 128), 'abcdefghijklmnopqrstuvwxyz 0123456789', 38)
-    T(dr, (64, 190), 'ÀÉÎÕÜ  áéíóú  çñß  € £ $ ¥ © ® ™', 30)
-    T(dr, (64, 240), '！。，、；：？“”‘’（）《》〈〉—…·～', 30)
-    T(dr, (64, 290), '← → ↑ ↓ ✓ ✗ ★ ☆ ▲ △ ● ○ ■ □ ◆ ◇', 30)
-    T(dr, (64, 348), 'The quick brown fox jumps over the lazy dog.  0123456789', 26, ink=BODY)
-    T(dr, (64, 400), '가 나 다 라 마 바 사 아 자 차 카 타 파 하  ·  한국어 글꼴', 30)
-    T(dr, (64, H - 56), '中西韩文共用同一笔画与圆角规则，混排时保持同一种语气。', 14, ink=GREY)
-    save(img, W, H, '08-latin.png')
+    save(img, W, H, 'spec-charset.png')
 
 
 if __name__ == '__main__':

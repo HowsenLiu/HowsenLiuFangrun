@@ -8,8 +8,8 @@ Basic font information
 
 Family:        HowsenLiu Fangrun (柳皓升方润黑体)
 Version:       2.000
-Glyphs:        44,655
-Code points:   44,752
+Glyphs:        44,731
+Code points:   44,828
 Designer:      柳皓升 Howsen Liu
 License:       SIL Open Font License 1.1 (OFL 1.1); free for
                personal & commercial use, modification and derivatives
@@ -25,12 +25,19 @@ the structure reads square while the details stay soft.
 Changelog
 ---------
 
+2026-11-22 (2.000 revision)
+  - Added 81 superscript / subscript / modifier letters; variable font and all
+    static / TTC / WOFF2 downstream builds rebuilt from the updated masters.
+  - Rebuilt the specimen set: a five-plate multilingual cover, weight axis,
+    multilingual board, body text and character-set sheet.
+  - Coverage: 44,828 code points / 44,731 glyphs.
+
 2026-11-21 (2.000 revision)
   - Merged the Noto Sans KR skeleton: all 11,172 precomposed Hangul syllables,
     jamo, extended jamo A/B, compatibility letters and halfwidth forms.
   - Fillet radius raised to 88/1000 em with a lower turn-angle threshold, so
     corners and terminals are rounder across every script.
-  - Coverage: 44,752 code points / 44,655 glyphs.
+  - Coverage: 44,752 code points / 44,655 glyphs (pre-marks build).
 
 2026-11-20 (2.000)
   - Variable font, weight 100–700; static Light / Regular / Medium / Bold

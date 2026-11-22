@@ -11,18 +11,17 @@
 
 **A rounded-square CJK sans — square in structure, soft at the terminals, built for screen and print.**
 
-[![Version](https://img.shields.io/badge/version-2.000-111111.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest)
-[![License](https://img.shields.io/badge/license-OFL%201.1-111111.svg)](LICENSE)
-[![Glyphs](https://img.shields.io/badge/glyphs-44%2C655-6a737d.svg)](#character-support)
+**柳皓升方润黑体 · 柳皓升方潤黑體 · HowsenLiu Fangrun · 柳皓升方潤ゴシック · 柳皓升방운고딕**
 
-[简体中文](README.zh-CN.md) · [Website](https://howsenliufangrun.pages.dev) · [GitHub](https://github.com/HowsenLiu/HowsenLiuFangrun)
+[![Version](https://img.shields.io/badge/version-2.000-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest)
+[![License](https://img.shields.io/badge/license-OFL%201.1-1d1d1f.svg)](LICENSE)
+[![Glyphs](https://img.shields.io/badge/glyphs-44%2C731-6a737d.svg)](#character-support)
 
-<a href="#gh-light-mode-only">
-  <img src="specimen/hero.gif" alt="HowsenLiu Fangrun specimen carousel — Chinese, English, Japanese, Korean and symbols" width="100%">
-</a>
-<a href="#gh-dark-mode-only">
-  <img src="specimen/hero-dark.gif" alt="HowsenLiu Fangrun specimen carousel — Chinese, English, Japanese, Korean and symbols" width="100%">
-</a>
+[![简体中文](https://img.shields.io/badge/简体中文-README-1d1d1f.svg)](README.zh-CN.md)
+[![Website](https://img.shields.io/badge/Website-在线官网-1d1d1f.svg)](https://howsenliufangrun.pages.dev)
+[![GitHub](https://img.shields.io/badge/GitHub-仓库-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun)
+
+<img src="specimen/hero.png" alt="HowsenLiu Fangrun specimen — Chinese, Traditional Chinese, English, Japanese, Korean and symbols" width="100%">
 
 </div>
 
@@ -30,8 +29,9 @@ HowsenLiu Fangrun is a sans-serif that balances an architectural, slightly squar
 consistent rounded terminals. Every corner and stroke ending shares one fillet radius, so the
 typeface reads clean in long lines and stays confident at display sizes. It covers Simplified and
 Traditional Chinese, Korean Hangul (all precomposed syllables and jamo), Latin and European
-accented letters, Greek, Cyrillic, Japanese kana, bopomofo, Arabic numerals and common punctuation
-and symbols.
+accented letters, Greek, Cyrillic, Japanese kana, bopomofo, superscript / subscript / modifier
+letters, Arabic numerals and common punctuation and symbols — **44,731 glyphs across 44,828 code
+points** in total.
 
 ## Download & Install
 
@@ -56,14 +56,14 @@ and symbols.
 
 ### Release assets
 
-| Release | Format · Size | Download |
-|---|---|---|
-| Variable font | `.ttf` · 192.9 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
-| Static weights | `.zip` · 59.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
-| TTC collection | `.ttc` · 157.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
-| Web fonts | `.zip` · 84.3 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
-| Variable package | `.zip` · 158.7 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
-| TTC package | `.zip` · 58.6 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
+| Pack | File | Format · Size | Download |
+|---|---|---|---|
+| Variable Font Pack | `HowsenLiuFangrun-VF.ttf` | TTF · 184.1 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
+| Variable Package · VF + full WOFF2 + FONTLOG | `HowsenLiuFangrun-VF.zip` | ZIP · 151.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.zip) |
+| Static Weights Pack · Light / Regular / Medium / Bold | `HowsenLiuFangrun-Static-TTF.zip` | ZIP · 56.5 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-Static-TTF.zip) |
+| TTC Collection · four static weights in one file | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
+| TTC Package | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
+| Web Font Pack · full / subset / demo WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
 
 ### Prompt for AI assistants
 
@@ -111,16 +111,17 @@ Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modi
 
 ## Character support
 
-| Script | Coverage |
-|:-:|:-:|
-| Han characters | GBK full set, GB18030 Level 1, Big5 Traditional; 44,655 glyphs / 44,752 code points in total |
-| Korean Hangul | All 11,172 precomposed syllables (가–힣), jamo, extended jamo A/B, compatibility letters and halfwidth forms |
-| Latin & European | Basic Latin plus accented letters (À Á Â Ä Ç É È Ê Ë Ñ Ó Ô Ö Ú Ü ã õ ç …), covering English, French, German, Spanish, Portuguese and more |
-| Greek & Cyrillic | Basic Greek and Cyrillic alphabets |
-| Japanese kana | Hiragana and katakana |
-| Bopomofo | Mandarin phonetic symbols ㄅㄆㄇㄈ |
-| Numerals | Arabic numerals 0–9 and Roman numerals Ⅰ–Ⅹ |
-| Punctuation & symbols | CJK and Western punctuation, arrows, geometric shapes, currency marks and common symbols |
+| Script / Block | Coverage |
+|---|---|
+| Han — Simplified & Traditional | GBK full set, GB 18030 Level 1/2, Big5 Traditional; 20,976 unified CJK ideographs plus 6,582 CJK Ext-A glyphs |
+| Korean Hangul | All 11,172 precomposed syllables (가–힣), 254 jamo, extended jamo A/B, compatibility letters and halfwidth forms |
+| Japanese kana | 93 hiragana, 96 katakana |
+| Latin & European | Basic Latin plus Latin Extended-A/Additional and diacritics (À Á Â Ä Ç É È Ê Ë Ñ Ó Ô Ö Ú Ü ã õ ç …), covering English, French, German, Spanish, Portuguese, Italian and more |
+| Greek & Cyrillic | Basic Greek alphabet (49 codepoints) and Cyrillic alphabet (66 codepoints) |
+| Bopomofo | 43 Mandarin phonetic symbols ㄅㄆㄇㄈ |
+| Numerals & letter marks | Arabic numerals 0–9, Roman numerals Ⅰ–Ⅹ, superscript / subscript / modifier letters |
+| Punctuation & symbols | CJK and Western punctuation, arrows, geometric shapes, currency marks, copyright / trademark signs and common UI symbols |
+| **Total** | **44,731 glyphs / 44,828 code points** |
 
 ## Variable axes
 
@@ -141,13 +142,15 @@ TTFs and a TTC collection.
 
 ## Specimens
 
-![Overview](specimen/01-overview.png)
+![Multilingual cover](specimen/hero.png)
 
-![Weights](specimen/02-weights.png)
+![Weight axis](specimen/spec-weights.png)
 
-![Body text](specimen/05-text.png)
+![Multilingual board](specimen/spec-multilingual.png)
 
-![Latin, symbols & Hangul](specimen/08-latin.png)
+![Body text](specimen/spec-text.png)
+
+![Character set](specimen/spec-charset.png)
 
 ## Web usage
 
@@ -172,18 +175,36 @@ common subset in this repo, or subset further to your own copy.
 - X / Twitter: [@HowsenLiu_](https://x.com/HowsenLiu_)
 - Code of Conduct: [`.github/CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md)
 
+### Acknowledgments
+
+This typeface was built on the open-source skeleton of the Noto family; the following designers
+and projects are gratefully acknowledged:
+
+- **Noto Sans CJK SC / Noto Sans SC** — skeleton and weight masters, by Ryoko NISHIZUKA and
+  Paul D. Hunt, Adobe & Google LLC.
+- **Noto Sans KR** — Hangul skeleton, by Sandoll Communications, Adobe & Google LLC.
+- *Noto* is a trademark of Google LLC.
+- Fillet unification, weight pairing, width and optical-size axes, naming and this build are by
+  Howsen Liu (柳皓升).
+
 ## License
 
-- Released under the **SIL Open Font License 1.1 (OFL 1.1)**. Usage follows the OFL 1.1 text:
-  free for personal and commercial use; glyphs may be modified and derivative fonts may be created.
-- Derivatives must remain under OFL 1.1 — they may not be relicensed under any other license — and
-  must retain the original copyright notices (Adobe / Google LLC, Noto Sans CJK SC / Noto Sans SC /
-  Noto Sans KR), author attribution and the full license text. The font files may not be sold standalone.
+This repository ships under **two SIL Open Font License 1.1 (OFL 1.1)** texts:
+
+1. **This release** — [`LICENSE`](LICENSE): Copyright 2014–2021 Adobe and Google LLC
+   (Noto Sans CJK SC / Noto Sans SC / Noto Sans KR); Copyright 2026 柳皓升 Howsen Liu
+   (https://github.com/HowsenLiu). Released under OFL 1.1.
+2. **Upstream retained source** — [`sources/kr/OFL-NotoSansKR.txt`](sources/kr/OFL-NotoSansKR.txt):
+   the verbatim OFL 1.1 notice for the embedded Noto Sans KR skeleton source, Copyright
+   2014–2021 Adobe, Reserved Font Name `Source`.
+
+Usage follows the OFL 1.1 text: free for personal and commercial use; glyphs may be modified and
+derivative fonts may be created. Derivatives must remain under OFL 1.1 — they may not be relicensed
+under any other license — and must retain the original copyright notices, author attribution and
+the full license text. The font files may not be sold standalone.
+
 - **Reserved Font Names**: `HowsenLiu Fangrun`, `柳皓升方润黑体`, `方润黑体`, `Fangrun` —
   modified derivatives must be renamed before release and may not keep any of these names.
-- Full terms: [LICENSE](LICENSE). Original skeleton attribution retained: Noto Sans CJK SC / Noto
-  Sans SC / Noto Sans KR (Copyright 2014–2021 Adobe and Google LLC, SIL OFL 1.1); rounding, weight
-  pairing and naming by Howsen Liu.
 
 ### Usage scenarios
 

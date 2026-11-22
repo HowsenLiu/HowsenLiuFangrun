@@ -2,6 +2,20 @@
 
 All notable changes to HowsenLiu Fangrun are documented here.
 
+## [2.000] — 2026-11-22 revision
+
+### Added
+
+- **81 superscript / subscript / modifier letters** synthesized from the
+  masters; the variable font and all static / TTC / WOFF2 downstream builds
+  were rebuilt from the updated masters.
+- Rebuilt specimen set: multilingual cover, weight axis, multilingual board,
+  body text and character-set sheet under `specimen/`.
+
+### Design
+
+- Coverage: **44,828 code points / 44,731 glyphs**.
+
 ## [2.000] — 2026-11-21 revision
 
 ### Added
@@ -14,7 +28,7 @@ All notable changes to HowsenLiu Fangrun are documented here.
 
 - Fillet radius raised from 70 to 88/1000 em, with a lower turn-angle
   threshold, so corners and terminals are rounder across CJK and Hangul alike.
-- Coverage: 44,752 code points / 44,655 glyphs.
+- Coverage: 44,752 code points / 44,655 glyphs (pre-marks build).
 
 ### Attribution
 
