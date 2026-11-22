@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 10" width="100%" height="10" role="img" aria-label="Animated divider">
+  <style>
+    .track { stroke: #e6e8eb; }
+    @media (prefers-color-scheme: dark) {
+      .track { stroke: #30363d; }
+    }
+  </style>
+  <line x1="0" y1="5" x2="1200" y2="5" stroke-width="1.5" class="track"/>
+  <circle r="3.2" fill="#c8a45d">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M0 5 H1200"/>
+  </circle>
+  <circle r="1.7" fill="#c8a45d" opacity="0.45">
+    <animateMotion dur="5s" begin="-2.5s" repeatCount="indefinite" path="M0 5 H1200"/>
+  </circle>
+</svg>

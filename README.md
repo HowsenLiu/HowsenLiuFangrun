@@ -1,11 +1,9 @@
 <div align="center">
 
-<a href="#gh-light-mode-only">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="logo-mark-dark.png">
   <img src="logo-mark.png" alt="HowsenLiu Fangrun" height="72">
-</a>
-<a href="#gh-dark-mode-only">
-  <img src="logo-mark-dark.png" alt="HowsenLiu Fangrun" height="72">
-</a>
+</picture>
 
 # HowsenLiu Fangrun · 柳皓升方润黑体
 
@@ -21,7 +19,11 @@
 [![GitHub](https://img.shields.io/badge/GitHub-仓库-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun)
 [![Website](https://img.shields.io/badge/website-howsenliufangrun.pages.dev-1d1d1f.svg)](https://howsenliufangrun.pages.dev/)
 
+<img src="assets/rule.svg" alt="" width="60%">
+
 <img src="specimen/hero.png" alt="HowsenLiu Fangrun specimen — Chinese, Traditional Chinese, English, Japanese, Korean and symbols" width="100%">
+
+<img src="assets/marquee.svg" alt="HowsenLiu Fangrun multilingual name marquee" width="100%">
 
 </div>
 
@@ -58,6 +60,8 @@ points** in total.
 
 All packages are free to download under the repository OFL 1.1 license.
 
+- **Container bundle (GitHub Packages)** — [`ghcr.io/howsenliu/howsenliu-fangrun`](https://github.com/HowsenLiu/HowsenLiuFangrun/pkgs/container/howsenliu-fangrun), tags `latest` / `2.000`; mirrors the Release assets above with the OFL license included.
+
 | Category | Pack | File | Format · Size | Download |
 |---|---|---|---|---|
 | Desktop | Variable font | `HowsenLiuFangrun-VF.ttf` | TTF · 184.1 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
@@ -72,7 +76,8 @@ All packages are free to download under the repository OFL 1.1 license.
 
 One tailored prompt per package — paste the one you need into your AI assistant; the direct download link is included.
 
-**Variable pack (VF)**
+<details>
+<summary><b>Variable pack (VF)</b></summary>
 
 ```text
 Fetch the "HowsenLiu Fangrun" variable font pack from GitHub and install it in my project.
@@ -82,7 +87,10 @@ The pack contains HowsenLiuFangrun-VF.ttf, with axes wght 100–700, wdth 75–1
 Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
 ```
 
-**Static TTF pack**
+</details>
+
+<details>
+<summary><b>Static TTF pack</b></summary>
 
 ```text
 Fetch the "HowsenLiu Fangrun" static TTF pack from GitHub and install it in my project.
@@ -92,7 +100,10 @@ The pack carries four static weights: Light / Regular / Medium / Bold.
 Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
 ```
 
-**TTC collection**
+</details>
+
+<details>
+<summary><b>TTC collection</b></summary>
 
 ```text
 Fetch the "HowsenLiu Fangrun" TTC collection from GitHub and install it in my project (for legacy WPS and older systems).
@@ -102,7 +113,10 @@ Single-file TTC collection with all four static weights.
 Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
 ```
 
-**Web WOFF2 pack**
+</details>
+
+<details>
+<summary><b>Web WOFF2 pack</b></summary>
 
 ```text
 Fetch the "HowsenLiu Fangrun" web WOFF2 pack from GitHub and embed it in my website.
@@ -111,6 +125,8 @@ Repo: https://github.com/HowsenLiu/HowsenLiuFangrun
 Compressed WOFF2 builds for web embedding.
 Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
 ```
+
+</details>
 
 ## Character support
 
@@ -127,6 +143,8 @@ Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modi
 | **Total** | **44,731 glyphs / 44,828 code points** |
 
 ## Variable axes
+
+<img src="assets/axes.svg" alt="Animated variable axes: weight, width and optical size sliders" width="100%">
 
 | Axis | Range · Default |
 |:-:|:-:|

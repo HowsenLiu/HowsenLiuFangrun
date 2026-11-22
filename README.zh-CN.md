@@ -1,11 +1,9 @@
 <div align="center">
 
-<a href="#gh-light-mode-only">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="logo-mark-dark.png">
   <img src="logo-mark.png" alt="柳皓升方润黑体" height="72">
-</a>
-<a href="#gh-dark-mode-only">
-  <img src="logo-mark-dark.png" alt="柳皓升方润黑体" height="72">
-</a>
+</picture>
 
 # 柳皓升方润黑体 · HowsenLiu Fangrun
 
@@ -21,7 +19,11 @@
 [![GitHub](https://img.shields.io/badge/GitHub-仓库-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun)
 [![官网](https://img.shields.io/badge/website-howsenliufangrun.pages.dev-1d1d1f.svg)](https://howsenliufangrun.pages.dev/)
 
+<img src="assets/rule.svg" alt="" width="60%">
+
 <img src="specimen/hero.png" alt="柳皓升方润黑体样张 —— 简体中文、繁體中文、English、日本語、한국어与符号" width="100%">
+
+<img src="assets/marquee.svg" alt="柳皓升方润黑体多语言名称滚动条" width="100%">
 
 </div>
 
@@ -54,6 +56,8 @@
 
 所有安装包均按仓库 OFL 1.1 协议免费下载。
 
+- **容器套餐（GitHub Packages）** — [`ghcr.io/howsenliu/howsenliu-fangrun`](https://github.com/HowsenLiu/HowsenLiuFangrun/pkgs/container/howsenliu-fangrun)，标签 `latest` / `2.000`；内容与上方 Release 附件一致，并随附 OFL 协议文本。
+
 | 分类 | 安装包 | 文件 | 格式 · 体积 | 下载 |
 |---|---|---|---|---|
 | 桌面端 | 可变字体 | `HowsenLiuFangrun-VF.ttf` | TTF · 184.1 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-VF.ttf) |
@@ -68,7 +72,8 @@
 
 每个安装包对应一段独立提示词，把需要的那段粘贴给 AI 助手即可，直达下载地址已写在其中。
 
-**可变完整包（VF）**
+<details>
+<summary><b>可变完整包（VF）</b></summary>
 
 ```text
 请从 GitHub 获取「柳皓升方润黑体 / HowsenLiu Fangrun」可变字体包，安装到我的项目。
@@ -78,7 +83,10 @@
 按仓库 LICENSE（SIL OFL 1.1）授权使用：可免费商用，也允许修改与制作衍生字体；衍生版本须继续以 OFL 1.1 发布，并保留署名与许可文本；字体文件不得脱离软件单独售卖。
 ```
 
-**静态字重包（Static TTF）**
+</details>
+
+<details>
+<summary><b>静态字重包（Static TTF）</b></summary>
 
 ```text
 请从 GitHub 获取「柳皓升方润黑体 / HowsenLiu Fangrun」静态字重包，安装到我的项目。
@@ -88,7 +96,10 @@
 按仓库 LICENSE（SIL OFL 1.1）授权使用：可免费商用，也允许修改与制作衍生字体；衍生版本须继续以 OFL 1.1 发布，并保留署名与许可文本；字体文件不得脱离软件单独售卖。
 ```
 
-**TTC 集合包**
+</details>
+
+<details>
+<summary><b>TTC 集合包</b></summary>
 
 ```text
 请从 GitHub 获取「柳皓升方润黑体 / HowsenLiu Fangrun」TTC 集合包，安装到我的项目（兼容旧版 WPS 与老系统）。
@@ -98,7 +109,10 @@
 按仓库 LICENSE（SIL OFL 1.1）授权使用：可免费商用，也允许修改与制作衍生字体；衍生版本须继续以 OFL 1.1 发布，并保留署名与许可文本；字体文件不得脱离软件单独售卖。
 ```
 
-**网页字体包（WOFF2）**
+</details>
+
+<details>
+<summary><b>网页字体包（WOFF2）</b></summary>
 
 ```text
 请从 GitHub 获取「柳皓升方润黑体 / HowsenLiu Fangrun」网页 WOFF2 包，嵌入我的网站。
@@ -107,6 +121,8 @@
 包内为网站嵌入用 WOFF2 压缩版本。
 按仓库 LICENSE（SIL OFL 1.1）授权使用：可免费商用，也允许修改与制作衍生字体；衍生版本须继续以 OFL 1.1 发布，并保留署名与许可文本；字体文件不得脱离软件单独售卖。
 ```
+
+</details>
 
 ## 字符支持
 
@@ -123,6 +139,8 @@
 | **合计** | **44,731 字形 / 44,828 码位** |
 
 ## 可变轴
+
+<img src="assets/axes.svg" alt="可变轴动画：字重、宽度、光学尺寸三条滑块" width="100%">
 
 | 轴 | 范围 · 默认值 |
 |:-:|:-:|
