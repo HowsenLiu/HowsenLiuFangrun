@@ -18,7 +18,6 @@
 [![Glyphs](https://img.shields.io/badge/glyphs-44%2C731-6a737d.svg)](#字符支持)
 
 [![English](https://img.shields.io/badge/English-README-1d1d1f.svg)](README.md)
-[![字体官网](https://img.shields.io/badge/官网-在线访问-1d1d1f.svg)](https://howsenliufangrun.pages.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-仓库-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun)
 
 <img src="specimen/hero.png" alt="柳皓升方润黑体样张 —— 简体中文、繁體中文、English、日本語、한국어与符号" width="100%">
@@ -62,7 +61,6 @@
 | 桌面端 | TTC 集合包 · 四款静态字重单文件 | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
 | 桌面端 | 集合压缩包 | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
 | 网页嵌入 | 网页字体包 · 全量 / 子集 / 演示 WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.2 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
-| 源码站点 | 网页源码 · HTML / CSS / JS + 站点 WOFF2 | `HowsenLiuFangrun-website-source.zip` | ZIP · 2.4 MB | [获取](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-website-source.zip) |
 
 ### 给 AI 助手的自取提示词
 
@@ -108,16 +106,6 @@
 按仓库 LICENSE（SIL OFL 1.1）授权使用：可免费商用，也允许修改与制作衍生字体；衍生版本须继续以 OFL 1.1 发布，并保留署名与许可文本；字体文件不得脱离软件单独售卖。
 ```
 
-**网页源码包**
-
-```text
-请从 GitHub 获取「柳皓升方润黑体 / HowsenLiu Fangrun」网页源码。
-直达下载：https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-website-source.zip
-仓库：https://github.com/HowsenLiu/HowsenLiuFangrun
-纯 HTML / CSS / JS 站点，含站点子集与演示 WOFF2，无需构建步骤。
-包内字体按仓库 LICENSE（SIL OFL 1.1）授权：再分发时保留版权声明与许可文本；字体文件不得脱离软件单独售卖。
-```
-
 ## 字符支持
 
 | 文字 / 区块 | 覆盖情况 |
@@ -143,10 +131,46 @@
 不支持可变轴的软件可使用配套静态字体：Light / Regular / Medium / Bold 四款 TTF 与
 TTC 集合包。
 
+## OpenType 特性
+
+可变字体与四款静态配套字体携带同一套 GSUB / GPOS 特性集。
+
+### 替换特性（GSUB）
+
+| 特性 | 标签 | 作用 |
+|---|---|---|
+| 标准连字 | `liga` | 默认连字 |
+| 自由连字 | `dlig` | 可选连字 |
+| 字符合成 / 分解 | `ccmp` | 组合或拆分复合字符 |
+| 地区字形 | `locl` | 按文字体系切换地区变体 |
+| 全角变体 | `fwid` | 全角字形替换 |
+| 半角变体 | `hwid` | 半角字形替换 |
+| 比例宽度变体 | `pwid` | 比例宽度字形替换 |
+| 竖排变体 | `vert` / `vrt2` | 竖排直立替代字形 |
+| 注音假名 | `ruby` | 注音（ruby）小号字形 |
+| 历史字形 | `hist` | 旧式 / 历史字形 |
+| 备用字形访问 | `aalt` | 暴露某一字形的全部备用形 |
+
+### 定位特性（GPOS）
+
+| 特性 | 标签 | 作用 |
+|---|---|---|
+| 横向字距 | `kern` | 假名、中文标点与拉丁附加符号的配对字距（845 对） |
+| 竖向字距 | `vkrn` | 竖排配对字距（560 对） |
+| 附加符号定位 | `mark` | 附加符号对基线 / 对附加符号的定位 |
+| 竖排定位 | `vert` | 竖排排版定位 |
+| 宽度感知定位 | `halt` `palt` `vhal` `vpal` | 半角 / 比例宽度定位表；本版本仅保留注册标签，未附加额外调整规则 |
+
+### 字体表
+
+- `fvar` / `STAT` / `gvar` / `HVAR` / `VVAR` —— 可变轴与变化元数据
+- `cmap` —— Unicode 映射（format 4 + format 12），另有 `BASE`、`GDEF`、`hmtx`、`vmtx`、`gasp`
+- 不含 Apple AAT 表（`mort` / `morx`）。
+
 ## 注意事项
 
-- 简繁区域变体未做区分（无 `locl` 特性）。
-- 无 TrueType 屏幕提示（hinting）；无拉丁字距调整（`kern` / GPOS 配对）。
+- 简繁区域变体除保留的地区字形外，未通过 `locl` 做额外拆分。
+- 无 TrueType 屏幕提示（hinting）；拉丁基础字母对未做专门字距调整，保留的 `kern` / `vkrn` 配对覆盖假名、中文标点与附加符号。
 - 宽窄轴为等比例横向缩放，75 缩窄时笔画会成比例变细。
 
 ## 样张
@@ -180,21 +204,8 @@ body { font-family: "HowsenLiu Fangrun", sans-serif; }
 ## 关于
 
 - 设计：[柳皓升（Howsen Liu）](https://github.com/HowsenLiu)
-- 字体官网：[howsenliufangrun.pages.dev](https://howsenliufangrun.pages.dev)
 - X / Twitter：[@HowsenLiu_](https://x.com/HowsenLiu_)
 - 行为守则：[`.github/CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md)
-
-### 致谢
-
-本次构建为基于 Noto 系列开源字体的修改版本。以下仅按随包保留的 OFL 声明记录上游版权方
-与署名作者，用于来源归属；本章节不构成任何背书、代言或合作关系。
-
-- **Noto Sans CJK SC / Noto Sans SC** —— 骨架与字重母版；上游 OFL 声明署名作者：
-  Ryoko NISHIZUKA、Paul D. Hunt；版权方：Adobe and Google LLC。
-- **Noto Sans KR** —— 谚文骨架；上游贡献方：Sandoll Communications；
-  版权方：Adobe and Google LLC。
-- *Noto* 为 Google LLC 的商标。
-- 圆角统一、字重配套、宽窄与光学尺寸轴、命名及本次构建由柳皓升 Howsen Liu 完成。
 
 ## 许可证
 

@@ -18,7 +18,6 @@
 [![Glyphs](https://img.shields.io/badge/glyphs-44%2C731-6a737d.svg)](#character-support)
 
 [![简体中文](https://img.shields.io/badge/简体中文-README-1d1d1f.svg)](README.zh-CN.md)
-[![Website](https://img.shields.io/badge/Website-在线官网-1d1d1f.svg)](https://howsenliufangrun.pages.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-仓库-1d1d1f.svg)](https://github.com/HowsenLiu/HowsenLiuFangrun)
 
 <img src="specimen/hero.png" alt="HowsenLiu Fangrun specimen — Chinese, Traditional Chinese, English, Japanese, Korean and symbols" width="100%">
@@ -66,7 +65,6 @@ All packages are free to download under the repository OFL 1.1 license.
 | Desktop | TTC collection · four static weights in one file | `HowsenLiuFangrun-TTC.ttc` | TTC · 150.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.ttc) |
 | Desktop | TTC package | `HowsenLiuFangrun-TTC.zip` | ZIP · 55.9 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-TTC.zip) |
 | Web embedding | Web font pack · full / subset / demo WOFF2 | `HowsenLiuFangrun-WOFF2.zip` | ZIP · 80.2 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-WOFF2.zip) |
-| Source & site | Website source · HTML / CSS / JS + site webfonts | `HowsenLiuFangrun-website-source.zip` | ZIP · 2.4 MB | [Get](https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-website-source.zip) |
 
 ### Prompt for AI assistants
 
@@ -112,16 +110,6 @@ Compressed WOFF2 builds for web embedding.
 Use it under the repository LICENSE (SIL OFL 1.1): free for commercial use; modification and derivatives are allowed, but derivatives must remain under OFL 1.1 with attribution and license text retained; the font files may not be sold standalone.
 ```
 
-**Website source**
-
-```text
-Fetch the "HowsenLiu Fangrun" website source from GitHub.
-Direct download: https://github.com/HowsenLiu/HowsenLiuFangrun/releases/latest/download/HowsenLiuFangrun-website-source.zip
-Repo: https://github.com/HowsenLiu/HowsenLiuFangrun
-Plain HTML / CSS / JS site with the page subset and demo WOFF2; no build step.
-The bundled fonts follow the repository LICENSE (SIL OFL 1.1): keep the copyright notice and license text when redistributing; the font files may not be sold standalone.
-```
-
 ## Character support
 
 | Script / Block | Coverage |
@@ -147,10 +135,46 @@ The bundled fonts follow the repository LICENSE (SIL OFL 1.1): keep the copyrigh
 Static companions for software without variable-axis support: Light / Regular / Medium / Bold four
 TTFs and a TTC collection.
 
+## OpenType features
+
+The variable font and the four static companions ship the same GSUB / GPOS feature set.
+
+### Substitution (GSUB)
+
+| Feature | Tag | Role |
+|---|---|---|
+| Standard ligatures | `liga` | Default ligatures |
+| Discretionary ligatures | `dlig` | Optional ligatures |
+| Glyph composition / decomposition | `ccmp` | Combine or decompose composite characters |
+| Localized forms | `locl` | Script-specific localized variants |
+| Full-width alternates | `fwid` | Full-width glyph substitutions |
+| Half-width alternates | `hwid` | Half-width glyph substitutions |
+| Proportional-width alternates | `pwid` | Proportional-width substitutions |
+| Vertical alternates | `vert` / `vrt2` | Upright alternates for vertical typesetting |
+| Ruby alternates | `ruby` | Small-letter forms for ruby (furigana) |
+| Historical forms | `hist` | Legacy / historical glyph forms |
+| Alternate access | `aalt` | Expose all alternates for a glyph |
+
+### Positioning (GPOS)
+
+| Feature | Tag | Role |
+|---|---|---|
+| Horizontal kerning | `kern` | Pair kerning for kana, CJK punctuation and Latin diacritic marks (845 pairs) |
+| Vertical kerning | `vkrn` | Pair kerning in vertical writing (560 pairs) |
+| Mark positioning | `mark` | Mark-to-base and mark-to-mark attachment |
+| Vertical positioning | `vert` | Positioning for vertical writing |
+| Width-aware positioning | `halt` `palt` `vhal` `vpal` | Half-width / proportional positioning tables; registered tags without extra adjustment rules in this build |
+
+### Tables
+
+- `fvar` / `STAT` / `gvar` / `HVAR` / `VVAR` — variable axes and variation metadata
+- `cmap` — Unicode mapping (format 4 + format 12), `BASE`, `GDEF`, `hmtx`, `vmtx`, `gasp`
+- No Apple AAT tables (`mort` / `morx`).
+
 ## Notes
 
-- Simplified / Traditional regional variants are not separated (no `locl` feature).
-- No TrueType hinting; no Latin kerning (`kern` / GPOS pairs).
+- Simplified / Traditional regional variants are not split through `locl` beyond the retained localized forms.
+- No TrueType hinting; Latin base-letter pairs are not specially kerned — retained `kern` / `vkrn` pairs cover kana, CJK punctuation and diacritic marks.
 - The width axis is a proportional horizontal scale; stems get proportionally lighter at 75.
 
 ## Specimens
@@ -184,23 +208,8 @@ common subset in this repo, or subset further to your own copy.
 ## About
 
 - Design: [Howsen Liu (柳皓升)](https://github.com/HowsenLiu)
-- Website: [howsenliufangrun.pages.dev](https://howsenliufangrun.pages.dev)
 - X / Twitter: [@HowsenLiu_](https://x.com/HowsenLiu_)
 - Code of Conduct: [`.github/CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md)
-
-### Acknowledgments
-
-This build is a modified version derived from the open-source Noto family. The upstream copyright
-holders and authors below are recorded for source attribution only; this section does not imply
-any endorsement, sponsorship or collaboration with them.
-
-- **Noto Sans CJK SC / Noto Sans SC** — skeleton and weight masters. Authors recorded in the
-  upstream OFL notices: Ryoko NISHIZUKA, Paul D. Hunt. Copyright holders: Adobe and Google LLC.
-- **Noto Sans KR** — Hangul skeleton. Upstream contributor: Sandoll Communications.
-  Copyright holders: Adobe and Google LLC.
-- *Noto* is a trademark of Google LLC.
-- Fillet unification, weight pairing, width and optical-size axes, naming and this build are the
-  work of Howsen Liu (柳皓升).
 
 ## License
 
